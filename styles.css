@@ -205,6 +205,7 @@ body {
   padding-right: 1.5rem;
 }
 
+
 .section {
   display: flex;
   flex-direction: column;
@@ -219,9 +220,10 @@ body {
 }
 
 .section__header {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: var(--section-index-width) 1fr;
+  column-gap: var(--section-column-gap);
+  align-items: baseline;
 }
 
 .section__index {
@@ -229,18 +231,27 @@ body {
   font-size: 0.9rem;
   color: var(--accent);
   letter-spacing: 0.12em;
+  text-align: right;
 }
 
 .section__header h2 {
   margin: 0;
-  font-size: 1.5rem;
-  letter-spacing: 0.02em;
+  font-size: var(--section-title-size);
+  font-weight: var(--section-title-weight);
+  letter-spacing: var(--section-title-letter-spacing);
+  text-transform: uppercase;
 }
 
 .section__body {
   display: grid;
   gap: 1.5rem;
   max-width: 620px;
+  margin-left: calc(var(--section-index-width) + var(--section-column-gap));
+}
+
+.timeline,
+.projects {
+  margin-left: calc(var(--section-index-width) + var(--section-column-gap));
 }
 
 .skills {
@@ -313,7 +324,9 @@ body {
 
 .timeline__item h3 {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .timeline__period {
@@ -388,7 +401,8 @@ body {
 
 .project h3 {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .project__label {
@@ -489,6 +503,21 @@ body {
     padding-right: 0;
   }
 
+  .section__header {
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+  }
+
+  .section__index {
+    text-align: left;
+  }
+
+  .section__body,
+  .timeline,
+  .projects {
+    margin-left: 0;
+  }
+
   .timeline__item {
     padding: 1.25rem 1.4rem;
   }
@@ -519,10 +548,6 @@ body {
 
   .sidebar__links {
     flex-wrap: wrap;
-  }
-
-  .section__header {
-    gap: 1rem;
   }
 
   .timeline__item {

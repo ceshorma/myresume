@@ -13,4 +13,11 @@
 
   /* Layout */
   --max-width: 1200px;
+  --section-index-width: 96px;
+  --section-column-gap: 1.75rem;
+
+  /* Tipografía de secciones */
+  --section-title-size: 1.75rem;
+  --section-title-letter-spacing: 0.18em;
+  --section-title-weight: 700;
 }
