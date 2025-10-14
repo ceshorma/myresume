@@ -251,7 +251,9 @@ body {
 
 .timeline,
 .projects {
-  margin-left: calc(var(--section-index-width) + var(--section-column-gap));
+  margin-left: calc(
+    var(--section-index-width) + var(--section-column-gap) - var(--card-padding-inline)
+  );
 }
 
 .skills {
@@ -282,7 +284,7 @@ body {
   gap: 1.25rem;
   max-width: 680px;
   position: relative;
-  padding: 1.5rem 1.75rem;
+  padding: var(--card-padding-block) var(--card-padding-inline);
   border-radius: 1.2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 0;
@@ -352,7 +354,8 @@ body {
   display: grid;
   gap: 1rem;
   position: relative;
-  padding: 1.75rem 1.75rem 2rem;
+  padding: var(--card-padding-block) var(--card-padding-inline)
+    calc(var(--card-padding-block) + 0.5rem);
   border-bottom: 1px solid rgba(148, 163, 184, 0.15);
   border-radius: 1.25rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -361,7 +364,7 @@ body {
 
 .project:last-child {
   border-bottom: none;
-  padding-bottom: 1.75rem;
+  padding-bottom: calc(var(--card-padding-block) + 0.25rem);
 }
 
 .project::before {

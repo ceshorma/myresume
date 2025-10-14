@@ -15,6 +15,8 @@
   --max-width: 1200px;
   --section-index-width: 96px;
   --section-column-gap: 1.75rem;
+  --card-padding-block: 1.5rem;
+  --card-padding-inline: 1.75rem;
 
   /* Tipografía de secciones */
   --section-title-size: 1.75rem;
