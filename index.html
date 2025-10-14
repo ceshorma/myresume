@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>César Hormazabal | Desarrollador Full Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Presentación y navegación principal">
+      <div class="sidebar__identity">
+        <p class="sidebar__intro" id="sidebar-intro"></p>
+        <h1 class="sidebar__name" id="sidebar-name"></h1>
+        <p class="sidebar__role" id="sidebar-role"></p>
+        <p class="sidebar__summary" id="sidebar-summary"></p>
+      </div>
+
+      <nav class="sidebar__nav" aria-label="Índice de secciones">
+        <ol id="sidebar-nav"></ol>
+      </nav>
+
+      <div class="sidebar__languages" id="sidebar-languages" role="group" aria-label="Selecciona idioma"></div>
+
+      <div class="sidebar__contact">
+        <a class="sidebar__email" id="sidebar-email" href="mailto:"></a>
+        <div class="sidebar__links" id="sidebar-links" aria-label="Perfiles sociales"></div>
+        <p class="sidebar__update" id="sidebar-update"></p>
+      </div>
+    </aside>
+
+    <main class="content" id="resume-content" aria-label="Contenido principal"></main>
+  </div>
+
+  <script type="module" src="resume.js"></script>
+</body>
+</html>
