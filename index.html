@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>César Hormazabal | Desarrollador Full Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Presentación y navegación principal">
+      <div class="sidebar__identity">
+        <p class="sidebar__intro">Hola, soy</p>
+        <h1 class="sidebar__name">César Hormazabal</h1>
+        <p class="sidebar__role">Desarrollador Full Stack</p>
+        <p class="sidebar__summary">
+          Diseño y construyo productos digitales performantes, accesibles y bien pensados. Disfruto trabajar en equipos
+          multidisciplinarios para convertir problemas complejos en soluciones simples.
+        </p>
+      </div>
+
+      <nav class="sidebar__nav" aria-label="Índice de secciones">
+        <ol>
+          <li><a href="#sobre-mi"><span>01</span> Sobre mí</a></li>
+          <li><a href="#experiencia"><span>02</span> Experiencia</a></li>
+          <li><a href="#proyectos"><span>03</span> Proyectos</a></li>
+          <li><a href="#contacto"><span>04</span> Contacto</a></li>
+        </ol>
+      </nav>
+
+      <div class="sidebar__contact">
+        <a class="sidebar__email" href="mailto:cesar.hormazabal@email.com">cesar.hormazabal@email.com</a>
+        <div class="sidebar__links" aria-label="Perfiles sociales">
+          <a href="https://www.linkedin.com/in/cesarhormazabal">LinkedIn</a>
+          <a href="https://github.com/cesarh">GitHub</a>
+          <a href="https://twitter.com/cesarh">Twitter</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content" aria-label="Contenido principal">
+      <section id="sobre-mi" class="section">
+        <header class="section__header">
+          <span class="section__index">01</span>
+          <h2>Sobre mí</h2>
+        </header>
+        <div class="section__body">
+          <p>
+            Soy ingeniero en informática con más de 6 años construyendo soluciones web end-to-end. He liderado equipos,
+            definido roadmaps técnicos y colaborado de manera estrecha con áreas de diseño, producto y negocio para
+            entregar experiencias coherentes.
+          </p>
+          <p>
+            Me enfoco en crear interfaces limpias y accesibles, apoyándome en procesos iterativos, métricas de impacto y
+            automatización para sostener la calidad en el tiempo.
+          </p>
+          <ul class="skills">
+            <li>TypeScript</li>
+            <li>React &amp; Next.js</li>
+            <li>Node.js</li>
+            <li>GraphQL</li>
+            <li>PostgreSQL</li>
+            <li>Terraform</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experiencia" class="section">
+        <header class="section__header">
+          <span class="section__index">02</span>
+          <h2>Experiencia</h2>
+        </header>
+        <div class="timeline">
+          <article class="timeline__item">
+            <header>
+              <h3>Lead Full Stack Engineer · Aurora Labs</h3>
+              <span class="timeline__period">2021 — Actualidad</span>
+            </header>
+            <ul>
+              <li>Diseñé la arquitectura de una plataforma de analítica que procesa más de 2M eventos diarios, reduciendo
+                costos de infraestructura en un 35%.</li>
+              <li>Implementé pipelines CI/CD con GitHub Actions y Terraform, disminuyendo tiempos de despliegue de horas a
+                minutos.</li>
+              <li>Mentoricé a un equipo de 6 desarrolladores promoviendo pair programming y revisiones de código
+                estructuradas.</li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <header>
+              <h3>Senior Frontend Engineer · Andina Commerce</h3>
+              <span class="timeline__period">2018 — 2021</span>
+            </header>
+            <ul>
+              <li>Rediseñé la experiencia de compra para múltiples marcas, aumentando la tasa de conversión en un 18%.</li>
+              <li>Implementé un design system modular con Storybook, logrando un 40% de reducción en tiempos de entrega.</li>
+              <li>Colaboré con UX research para integrar métricas de satisfacción en el proceso de diseño.</li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <header>
+              <h3>Full Stack Developer · Nube Digital</h3>
+              <span class="timeline__period">2016 — 2018</span>
+            </header>
+            <ul>
+              <li>Construí microservicios en Node.js para pagos y notificaciones en tiempo real.</li>
+              <li>Integré monitoreo y alertas que disminuyeron incidentes críticos en un 25%.</li>
+              <li>Desarrollé dashboards interactivos para clientes corporativos con React y D3.js.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="proyectos" class="section">
+        <header class="section__header">
+          <span class="section__index">03</span>
+          <h2>Proyectos destacados</h2>
+        </header>
+        <div class="projects">
+          <article class="project">
+            <header>
+              <h3>Mapa de Energía</h3>
+              <span class="project__label">Dashboard en tiempo real</span>
+            </header>
+            <p>
+              Visualiza consumo energético industrial, genera alertas inteligentes y produce predicciones basadas en
+              machine learning.
+            </p>
+            <ul class="project__stack">
+              <li>Next.js</li>
+              <li>GraphQL</li>
+              <li>Supabase</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/cesarh/energia" aria-label="Repositorio de Mapa de Energía">GitHub</a>
+              <a href="https://energia-demo.example" aria-label="Demo de Mapa de Energía">Demo</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <header>
+              <h3>Onboarding 360</h3>
+              <span class="project__label">Suite de automatización</span>
+            </header>
+            <p>
+              Automatiza procesos de onboarding corporativo con workflows personalizables, reportes de adopción y
+              analítica integrada.
+            </p>
+            <ul class="project__stack">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/cesarh/onboarding360"
+                aria-label="Repositorio de Onboarding 360">GitHub</a>
+              <a href="https://onboarding360.example" aria-label="Demo de Onboarding 360">Demo</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <header>
+              <h3>Insight Retail</h3>
+              <span class="project__label">Plataforma SaaS</span>
+            </header>
+            <p>
+              Integra métricas de ventas, comportamiento de clientes y logística para generar recomendaciones
+              accionables.
+            </p>
+            <ul class="project__stack">
+              <li>Vue</li>
+              <li>Firebase</li>
+              <li>Cloud Functions</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/cesarh/insight-retail"
+                aria-label="Repositorio de Insight Retail">GitHub</a>
+              <a href="https://insight-retail.example" aria-label="Demo de Insight Retail">Demo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <header class="section__header">
+          <span class="section__index">04</span>
+          <h2>Ponerse en contacto</h2>
+        </header>
+        <div class="section__body">
+          <p>
+            Estoy abierto a proyectos donde pueda aportar valor tangible a través de la tecnología. Si quieres
+            colaborar o simplemente conversar, será un gusto leerte.
+          </p>
+          <a class="button" href="mailto:cesar.hormazabal@email.com">Envíame un mensaje</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
