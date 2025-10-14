@@ -164,7 +164,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4.5rem;
-  padding-right: 1.5rem;
 }
 
 .section {
@@ -398,3 +397,18 @@ body {
   }
 }
 
+@media (min-width: 821px) {
+  body {
+    overflow: hidden;
+  }
+
+  .layout {
+    height: calc(100vh - 6rem);
+  }
+
+  .content {
+    overflow-y: auto;
+    padding-right: 1.5rem;
+    scroll-behavior: smooth;
+  }
+}
