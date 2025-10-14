@@ -15,3 +15,13 @@ export const TECH_ICON_MAP = {
 export function getTechIconPath(slug) {
   return TECH_ICON_MAP[slug] || null;
 }
+
+export const SOCIAL_ICON_MAP = {
+  github: 'assets/icons/github.svg',
+  linkedin: 'assets/icons/linkedin.svg',
+  twitter: 'assets/icons/twitter.svg',
+};
+
+export function getSocialIconPath(slug) {
+  return SOCIAL_ICON_MAP[slug] || null;
+}

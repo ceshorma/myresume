@@ -21,19 +21,29 @@
                     {
                         "label": "LinkedIn",
                         "url": "https://www.linkedin.com/in/cesarhormazabal",
-                        "ariaLabel": "Abrir perfil de LinkedIn"
+                        "ariaLabel": "Abrir perfil de LinkedIn",
+                        "icon": "linkedin"
                     },
                     {
                         "label": "GitHub",
                         "url": "https://github.com/cesarh",
-                        "ariaLabel": "Abrir perfil de GitHub"
+                        "ariaLabel": "Abrir perfil de GitHub",
+                        "icon": "github"
                     },
                     {
                         "label": "Twitter",
                         "url": "https://twitter.com/cesarh",
-                        "ariaLabel": "Abrir perfil de Twitter"
+                        "ariaLabel": "Abrir perfil de Twitter",
+                        "icon": "twitter"
                     }
-                ]
+                ],
+                "download": {
+                    "label": "Descargar CV",
+                    "ariaLabel": "Descargar el CV en PDF",
+                    "tooltip": "Descargar PDF",
+                    "url": "assets/documents/cesar-hormazabal-resume.pdf",
+                    "filename": "cesar-hormazabal-cv.pdf"
+                }
             },
             "sections": [
                 {
@@ -123,7 +133,12 @@
                                     "url": "https://energia-demo.example",
                                     "ariaLabel": "Demo de Mapa de Energía"
                                 }
-                            ]
+                            ],
+                            "image": {
+                                "src": "assets/images/projects/energy-map-placeholder.svg",
+                                "alt": "Vista de referencia del dashboard de Mapa de Energía",
+                                "caption": "Vista conceptual del dashboard"
+                            }
                         },
                         {
                             "name": "Onboarding 360",
@@ -140,7 +155,12 @@
                                     "url": "https://onboarding360.example/caso",
                                     "ariaLabel": "Caso de estudio de Onboarding 360"
                                 }
-                            ]
+                            ],
+                            "image": {
+                                "src": "assets/images/projects/onboarding-360-placeholder.svg",
+                                "alt": "Vista de referencia del workspace de Onboarding 360",
+                                "caption": "Mockup del flujo automatizado"
+                            }
                         }
                     ]
                 },
@@ -164,6 +184,14 @@
                 "nav": "Índice de secciones",
                 "languageSwitcher": "Selecciona idioma",
                 "email": "Enviar correo a César"
+            },
+            "actions": {
+                "backToTop": {
+                    "label": "Volver arriba",
+                    "ariaLabel": "Regresar al inicio de la página",
+                    "tooltip": "Volver arriba",
+                    "shortLabel": "Arriba"
+                }
             }
         },
         "en": {
@@ -186,19 +214,29 @@
                     {
                         "label": "LinkedIn",
                         "url": "https://www.linkedin.com/in/cesarhormazabal",
-                        "ariaLabel": "Open LinkedIn profile"
+                        "ariaLabel": "Open LinkedIn profile",
+                        "icon": "linkedin"
                     },
                     {
                         "label": "GitHub",
                         "url": "https://github.com/cesarh",
-                        "ariaLabel": "Open GitHub profile"
+                        "ariaLabel": "Open GitHub profile",
+                        "icon": "github"
                     },
                     {
                         "label": "Twitter",
                         "url": "https://twitter.com/cesarh",
-                        "ariaLabel": "Open Twitter profile"
+                        "ariaLabel": "Open Twitter profile",
+                        "icon": "twitter"
                     }
-                ]
+                ],
+                "download": {
+                    "label": "Download résumé",
+                    "ariaLabel": "Download the résumé as PDF",
+                    "tooltip": "Download PDF",
+                    "url": "assets/documents/cesar-hormazabal-resume.pdf",
+                    "filename": "cesar-hormazabal-resume.pdf"
+                }
             },
             "sections": [
                 {
@@ -288,7 +326,12 @@
                                     "url": "https://energia-demo.example",
                                     "ariaLabel": "Energy Map live demo"
                                 }
-                            ]
+                            ],
+                            "image": {
+                                "src": "assets/images/projects/energy-map-placeholder.svg",
+                                "alt": "Placeholder preview of the Energy Map dashboard",
+                                "caption": "Concept interface preview"
+                            }
                         },
                         {
                             "name": "Onboarding 360",
@@ -305,7 +348,12 @@
                                     "url": "https://onboarding360.example/case",
                                     "ariaLabel": "Onboarding 360 case study"
                                 }
-                            ]
+                            ],
+                            "image": {
+                                "src": "assets/images/projects/onboarding-360-placeholder.svg",
+                                "alt": "Placeholder preview of the Onboarding 360 workspace",
+                                "caption": "Workflow automation mockup"
+                            }
                         }
                     ]
                 },
@@ -329,6 +377,14 @@
                 "nav": "Section index",
                 "languageSwitcher": "Choose language",
                 "email": "Email César"
+            },
+            "actions": {
+                "backToTop": {
+                    "label": "Back to top",
+                    "ariaLabel": "Return to the top of the page",
+                    "tooltip": "Back to top",
+                    "shortLabel": "Top"
+                }
             }
         },
         "pt": {
@@ -351,19 +407,29 @@
                     {
                         "label": "LinkedIn",
                         "url": "https://www.linkedin.com/in/cesarhormazabal",
-                        "ariaLabel": "Abrir perfil no LinkedIn"
+                        "ariaLabel": "Abrir perfil no LinkedIn",
+                        "icon": "linkedin"
                     },
                     {
                         "label": "GitHub",
                         "url": "https://github.com/cesarh",
-                        "ariaLabel": "Abrir perfil no GitHub"
+                        "ariaLabel": "Abrir perfil no GitHub",
+                        "icon": "github"
                     },
                     {
                         "label": "Twitter",
                         "url": "https://twitter.com/cesarh",
-                        "ariaLabel": "Abrir perfil no Twitter"
+                        "ariaLabel": "Abrir perfil no Twitter",
+                        "icon": "twitter"
                     }
-                ]
+                ],
+                "download": {
+                    "label": "Baixar currículo",
+                    "ariaLabel": "Baixar o currículo em PDF",
+                    "tooltip": "Baixar PDF",
+                    "url": "assets/documents/cesar-hormazabal-resume.pdf",
+                    "filename": "cesar-hormazabal-curriculo.pdf"
+                }
             },
             "sections": [
                 {
@@ -453,7 +519,12 @@
                                     "url": "https://energia-demo.example",
                                     "ariaLabel": "Demo do Mapa de Energia"
                                 }
-                            ]
+                            ],
+                            "image": {
+                                "src": "assets/images/projects/energy-map-placeholder.svg",
+                                "alt": "Visual de referência do painel do Mapa de Energia",
+                                "caption": "Prévia conceitual da interface"
+                            }
                         },
                         {
                             "name": "Onboarding 360",
@@ -470,7 +541,12 @@
                                     "url": "https://onboarding360.example/caso",
                                     "ariaLabel": "Estudo de caso de Onboarding 360"
                                 }
-                            ]
+                            ],
+                            "image": {
+                                "src": "assets/images/projects/onboarding-360-placeholder.svg",
+                                "alt": "Visual de referência do workspace do Onboarding 360",
+                                "caption": "Mockup do fluxo automatizado"
+                            }
                         }
                     ]
                 },
@@ -494,6 +570,14 @@
                 "nav": "Índice de seções",
                 "languageSwitcher": "Escolha o idioma",
                 "email": "Enviar e-mail para César"
+            },
+            "actions": {
+                "backToTop": {
+                    "label": "Voltar ao topo",
+                    "ariaLabel": "Retornar ao início da página",
+                    "tooltip": "Voltar ao topo",
+                    "shortLabel": "Topo"
+                }
             }
         }
     }

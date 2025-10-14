@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Onboarding 360 placeholder</title>
+  <desc id="desc">Abstract workflow illustration with panels and cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0b1220" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)" rx="48" />
+  <g transform="translate(96 112)">
+    <rect width="1088" height="496" rx="36" fill="#0b1220" stroke="#1e293b" stroke-width="2" />
+    <rect x="48" y="64" width="320" height="368" rx="28" fill="url(#panel)" opacity="0.65" />
+    <rect x="408" y="64" width="252" height="152" rx="24" fill="url(#card)" stroke="#1f2937" />
+    <rect x="408" y="248" width="252" height="184" rx="24" fill="url(#card)" stroke="#1f2937" opacity="0.85" />
+    <rect x="692" y="64" width="276" height="160" rx="28" fill="#0f172a" stroke="#1f2937" />
+    <rect x="692" y="256" width="276" height="84" rx="22" fill="#0f172a" stroke="#1f2937" />
+    <rect x="692" y="360" width="276" height="72" rx="20" fill="#0f172a" stroke="#1f2937" />
+    <g fill="#1e293b" opacity="0.75">
+      <rect x="80" y="108" width="256" height="12" rx="6" />
+      <rect x="80" y="140" width="216" height="12" rx="6" />
+      <rect x="80" y="172" width="236" height="12" rx="6" />
+      <rect x="80" y="204" width="196" height="12" rx="6" />
+      <rect x="80" y="236" width="224" height="12" rx="6" />
+      <rect x="80" y="268" width="140" height="12" rx="6" />
+    </g>
+    <g stroke="#22d3ee" stroke-width="4" stroke-linecap="round" opacity="0.6">
+      <path d="M384 148 H408" />
+      <path d="M384 196 H408" />
+      <path d="M384 292 H408" />
+      <path d="M384 324 H408" />
+    </g>
+    <g stroke="#38bdf8" stroke-width="6" stroke-linecap="round" opacity="0.5">
+      <path d="M660 140 H692" />
+      <path d="M660 172 H692" />
+      <path d="M660 204 H692" />
+      <path d="M660 296 H692" />
+      <path d="M660 332 H692" />
+      <path d="M660 392 H692" />
+    </g>
+  </g>
+  <text x="128" y="620" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="28" letter-spacing="4">ONBOARDING 360</text>
+</svg>

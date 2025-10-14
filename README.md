@@ -15,12 +15,18 @@ Todo el contenido del CV vive en `resume-data.json`. Modifica ese archivo para a
 - Bajo `languages` encontrarás un bloque por idioma (`es`, `en`, `pt`) con los textos, etiquetas accesibles y la nota de última actualización. Mantén los mismos identificadores de sección (`id`) para conservar el enrutamiento de los enlaces.
 - Para añadir un nuevo idioma duplica cualquiera de los bloques existentes, actualiza los textos y agrega una entrada al selector de idiomas con un código y etiquetas propios.
 - Actualiza `lastUpdate` en cada idioma para reflejar cuándo hiciste modificaciones relevantes.
+- Dentro de `contact` puedes usar el bloque `download` para definir el texto, el archivo PDF (`assets/documents/…`) y las etiquetas accesibles del botón que descarga el CV.
+- Cada proyecto admite el objeto `image` con `src`, `alt` y `caption`. Las ilustraciones de referencia viven en `assets/images/projects/` y puedes reemplazarlas por capturas reales cuando las tengas.
+- Usa `actions.backToTop` en cada idioma para personalizar la etiqueta del botón “volver arriba”.
 
 ### Ajustar el diseño
 
 - Los colores, tipografías y dimensiones globales se controlan mediante variables CSS en `design-tokens.css`. Edita ese archivo para personalizar la identidad visual sin modificar las reglas de estilo base.
 - Las reglas de disposición y comportamiento viven en `styles.css`, donde se consumen los *tokens* definidos previamente. Evita hardcodear valores decorativos ahí para mantener la separación entre contenido y diseño.
 - Los íconos de tecnologías viven en `assets/icons/`. Si agregas o renombras habilidades en el JSON, crea el SVG correspondiente y actualiza el mapeo en `tech-icons.js` para que aparezcan automáticamente.
+- Los enlaces de contacto aceptan un campo opcional `icon` (por ejemplo `"github"`, `"linkedin"`, `"twitter"`) que también se resuelve desde `tech-icons.js`. Añade el SVG respectivo en `assets/icons/` para nuevos servicios.
+- El PDF descargable del CV reside en `assets/documents/`. Sustitúyelo por tu versión final manteniendo la ruta indicada en el JSON.
+- Las imágenes de los proyectos están en `assets/images/projects/` para que puedas actualizarlas sin tocar el layout.
 
 ## Despliegue recomendado
 

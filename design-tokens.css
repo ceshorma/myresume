@@ -17,6 +17,10 @@
   --section-column-gap: 1.75rem;
   --card-padding-block: 1.5rem;
   --card-padding-inline: 1.75rem;
+  --icon-size: 1.1rem;
+  --floating-button-size: 3.25rem;
+  --floating-button-offset: 2.75rem;
+  --project-image-radius: 1.1rem;
 
   /* Tipografía de secciones */
   --section-title-size: 1.75rem;

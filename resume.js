@@ -1,4 +1,4 @@
-import { getTechIconPath } from './tech-icons.js';
+import { getSocialIconPath, getTechIconPath } from './tech-icons.js';
 
 const state = {
   payload: null,
@@ -9,6 +9,7 @@ const state = {
   sectionElements: [],
   scrollHandler: null,
   scrollFrame: null,
+  backToTopButton: null,
 };
 
 document.addEventListener('DOMContentLoaded', loadResume);
@@ -60,6 +61,7 @@ function applyLanguage(languageCode) {
   renderLanguageSwitcher(state.payload.languages, languageCode);
   renderSidebar(languageData);
   renderSections(languageData.sections);
+  renderBackToTop(languageData);
 
   requestAnimationFrame(() => {
     window.scrollTo({ top: previousScrollY });
@@ -147,16 +149,70 @@ function renderSidebar(languageData) {
     if (Array.isArray(contact?.links)) {
       contact.links.forEach((link) => {
         if (!link?.url || !link?.label) return;
+
         const anchor = document.createElement('a');
+        anchor.className = 'sidebar__link';
         anchor.href = link.url;
-        anchor.textContent = link.label;
         anchor.rel = 'noreferrer noopener';
         anchor.target = '_blank';
+
         if (link.ariaLabel) {
           anchor.setAttribute('aria-label', link.ariaLabel);
         }
+
+        anchor.setAttribute('title', link.ariaLabel || link.label);
+
+        const iconSlug = link.icon ? toSlug(link.icon) : toSlug(link.label);
+        const iconPath = iconSlug ? getSocialIconPath(iconSlug) : null;
+        if (iconPath) {
+          const icon = createIconElement(iconPath, 'icon sidebar__link-icon');
+          anchor.appendChild(icon);
+        }
+
+        const text = document.createElement('span');
+        text.className = 'sidebar__link-label';
+        text.textContent = link.label;
+        anchor.appendChild(text);
+
         linksContainer.appendChild(anchor);
       });
+    }
+  }
+
+  const downloadLink = document.getElementById('sidebar-download');
+  if (downloadLink) {
+    const download = contact?.download;
+
+    if (download?.url && download?.label) {
+      downloadLink.hidden = false;
+      downloadLink.href = download.url;
+      downloadLink.textContent = download.label;
+
+      if (download.filename) {
+        downloadLink.setAttribute('download', download.filename);
+      } else {
+        downloadLink.setAttribute('download', '');
+      }
+
+      if (download.ariaLabel) {
+        downloadLink.setAttribute('aria-label', download.ariaLabel);
+      } else {
+        downloadLink.removeAttribute('aria-label');
+      }
+
+      const tooltip = download.tooltip || download.ariaLabel || download.label;
+      if (tooltip) {
+        downloadLink.setAttribute('title', tooltip);
+      } else {
+        downloadLink.removeAttribute('title');
+      }
+    } else {
+      downloadLink.hidden = true;
+      downloadLink.textContent = '';
+      downloadLink.removeAttribute('href');
+      downloadLink.removeAttribute('aria-label');
+      downloadLink.removeAttribute('title');
+      downloadLink.removeAttribute('download');
     }
   }
 
@@ -352,6 +408,26 @@ function renderProjectsSection(section) {
       header.appendChild(labelSpan);
     }
 
+    if (project.image?.src) {
+      const media = document.createElement('figure');
+      media.className = 'project__media';
+
+      const image = document.createElement('img');
+      image.className = 'project__image';
+      image.src = project.image.src;
+      image.alt = project.image.alt || project.name;
+      media.appendChild(image);
+
+      if (project.image.caption) {
+        const caption = document.createElement('figcaption');
+        caption.className = 'project__caption';
+        caption.textContent = project.image.caption;
+        media.appendChild(caption);
+      }
+
+      article.appendChild(media);
+    }
+
     article.appendChild(header);
 
     if (project.description) {
@@ -416,25 +492,54 @@ function renderContactSection(section) {
   return body;
 }
 
+function renderBackToTop(languageData) {
+  const button = document.getElementById('back-to-top');
+  if (!button) return;
+
+  const action = languageData?.actions?.backToTop || {};
+  const label = action.label || 'Back to top';
+  const ariaLabel = action.ariaLabel || label;
+  const tooltip = action.tooltip || ariaLabel;
+  const shortLabel = action.shortLabel || label;
+
+  button.textContent = shortLabel;
+
+  if (ariaLabel) {
+    button.setAttribute('aria-label', ariaLabel);
+  } else {
+    button.removeAttribute('aria-label');
+  }
+
+  if (tooltip) {
+    button.setAttribute('title', tooltip);
+  } else {
+    button.removeAttribute('title');
+  }
+
+  if (!state.backToTopButton) {
+    button.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      button.blur();
+    });
+  }
+
+  state.backToTopButton = button;
+  button.classList.remove('is-visible');
+  updateBackToTopVisibility();
+}
+
 function createTechBadge(label) {
   const item = document.createElement('li');
   item.className = 'tech-badge';
 
-  const slug = toTechSlug(label);
+  const slug = toSlug(label);
   if (slug) {
     item.dataset.tech = slug;
   }
 
   const iconPath = slug ? getTechIconPath(slug) : null;
   if (iconPath) {
-    const icon = document.createElement('img');
-    icon.src = iconPath;
-    icon.alt = '';
-    icon.loading = 'lazy';
-    icon.setAttribute('aria-hidden', 'true');
-    icon.width = 20;
-    icon.height = 20;
-    icon.decoding = 'async';
+    const icon = createIconElement(iconPath, 'icon tech-badge__icon');
     item.appendChild(icon);
   }
 
@@ -445,7 +550,15 @@ function createTechBadge(label) {
   return item;
 }
 
-function toTechSlug(label) {
+function createIconElement(iconPath, className) {
+  const span = document.createElement('span');
+  span.className = className;
+  span.setAttribute('aria-hidden', 'true');
+  span.style.setProperty('--icon-url', `url("${iconPath}")`);
+  return span;
+}
+
+function toSlug(label) {
   if (!label) return '';
   return label
     .toString()
@@ -617,5 +730,21 @@ function syncActiveSectionByScroll() {
 
   if (bestSection) {
     setActiveSection(bestSection.id);
+  }
+
+  updateBackToTopVisibility();
+}
+
+function updateBackToTopVisibility() {
+  const button = state.backToTopButton || document.getElementById('back-to-top');
+  if (!button) return;
+
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+  const shouldShow = (window.scrollY || window.pageYOffset || 0) > viewportHeight * 0.5;
+
+  if (shouldShow) {
+    button.classList.add('is-visible');
+  } else {
+    button.classList.remove('is-visible');
   }
 }
