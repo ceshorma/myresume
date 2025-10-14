@@ -1,0 +1,172 @@
+{
+  "identity": {
+    "intro": "Hola, soy",
+    "name": "César Hormazabal",
+    "role": "Desarrollador Full Stack",
+    "summary": "Diseño y construyo productos digitales performantes, accesibles y bien pensados. Disfruto trabajar en equipos multidisciplinarios para convertir problemas complejos en soluciones simples."
+  },
+  "contact": {
+    "email": "cesar.hormazabal@email.com",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/cesarhormazabal"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/cesarh"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/cesarh"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "sobre-mi",
+      "number": "01",
+      "title": "Sobre mí",
+      "navLabel": "Sobre mí",
+      "type": "about",
+      "paragraphs": [
+        "Soy ingeniero en informática con más de 6 años construyendo soluciones web end-to-end. He liderado equipos, definido roadmaps técnicos y colaborado de manera estrecha con áreas de diseño, producto y negocio para entregar experiencias coherentes.",
+        "Me enfoco en crear interfaces limpias y accesibles, apoyándome en procesos iterativos, métricas de impacto y automatización para sostener la calidad en el tiempo."
+      ],
+      "skills": [
+        "TypeScript",
+        "React & Next.js",
+        "Node.js",
+        "GraphQL",
+        "PostgreSQL",
+        "Terraform"
+      ]
+    },
+    {
+      "id": "experiencia",
+      "number": "02",
+      "title": "Experiencia",
+      "navLabel": "Experiencia",
+      "type": "timeline",
+      "items": [
+        {
+          "role": "Lead Full Stack Engineer · Aurora Labs",
+          "period": "2021 — Actualidad",
+          "achievements": [
+            "Diseñé la arquitectura de una plataforma de analítica que procesa más de 2M eventos diarios, reduciendo costos de infraestructura en un 35%.",
+            "Implementé pipelines CI/CD con GitHub Actions y Terraform, disminuyendo tiempos de despliegue de horas a minutos.",
+            "Mentoricé a un equipo de 6 desarrolladores promoviendo pair programming y revisiones de código estructuradas."
+          ]
+        },
+        {
+          "role": "Senior Frontend Engineer · Andina Commerce",
+          "period": "2018 — 2021",
+          "achievements": [
+            "Rediseñé la experiencia de compra para múltiples marcas, aumentando la tasa de conversión en un 18%.",
+            "Implementé un design system modular con Storybook, logrando un 40% de reducción en tiempos de entrega.",
+            "Colaboré con UX research para integrar métricas de satisfacción en el proceso de diseño."
+          ]
+        },
+        {
+          "role": "Full Stack Developer · Nube Digital",
+          "period": "2016 — 2018",
+          "achievements": [
+            "Construí microservicios en Node.js para pagos y notificaciones en tiempo real.",
+            "Integré monitoreo y alertas que disminuyeron incidentes críticos en un 25%.",
+            "Desarrollé dashboards interactivos para clientes corporativos con React y D3.js."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proyectos",
+      "number": "03",
+      "title": "Proyectos destacados",
+      "navLabel": "Proyectos",
+      "type": "projects",
+      "items": [
+        {
+          "name": "Mapa de Energía",
+          "label": "Dashboard en tiempo real",
+          "description": "Visualiza consumo energético industrial, genera alertas inteligentes y produce predicciones basadas en machine learning.",
+          "stack": [
+            "Next.js",
+            "GraphQL",
+            "Supabase"
+          ],
+          "links": [
+            {
+              "label": "GitHub",
+              "url": "https://github.com/cesarh/energia",
+              "ariaLabel": "Repositorio de Mapa de Energía"
+            },
+            {
+              "label": "Demo",
+              "url": "https://energia-demo.example",
+              "ariaLabel": "Demo de Mapa de Energía"
+            }
+          ]
+        },
+        {
+          "name": "Onboarding 360",
+          "label": "Suite de automatización",
+          "description": "Automatiza procesos de onboarding corporativo con workflows personalizables, reportes de adopción y analítica integrada.",
+          "stack": [
+            "React",
+            "Node.js",
+            "MongoDB"
+          ],
+          "links": [
+            {
+              "label": "GitHub",
+              "url": "https://github.com/cesarh/onboarding360",
+              "ariaLabel": "Repositorio de Onboarding 360"
+            },
+            {
+              "label": "Demo",
+              "url": "https://onboarding360.example",
+              "ariaLabel": "Demo de Onboarding 360"
+            }
+          ]
+        },
+        {
+          "name": "Insight Retail",
+          "label": "Plataforma SaaS",
+          "description": "Integra métricas de ventas, comportamiento de clientes y logística para generar recomendaciones accionables.",
+          "stack": [
+            "Vue",
+            "Firebase",
+            "Cloud Functions"
+          ],
+          "links": [
+            {
+              "label": "GitHub",
+              "url": "https://github.com/cesarh/insight-retail",
+              "ariaLabel": "Repositorio de Insight Retail"
+            },
+            {
+              "label": "Demo",
+              "url": "https://insight-retail.example",
+              "ariaLabel": "Demo de Insight Retail"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contacto",
+      "number": "04",
+      "title": "Ponerse en contacto",
+      "navLabel": "Contacto",
+      "type": "contact",
+      "paragraphs": [
+        "Estoy abierto a proyectos donde pueda aportar valor tangible a través de la tecnología. Si quieres colaborar o simplemente conversar, será un gusto leerte."
+      ],
+      "cta": {
+        "label": "Envíame un mensaje",
+        "url": "mailto:cesar.hormazabal@email.com"
+      }
+    }
+  ],
+  "lastUpdate": "Actualizado el 9 de junio de 2024 a las 18:45 CLT"
+}
