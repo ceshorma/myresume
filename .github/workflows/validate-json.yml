@@ -22,4 +22,4 @@ jobs:
         with:
           node-version: 20
       - name: Validate resume data against schema
-        run: npx --yes ajv-cli validate --strict=true --spec=draft2020 --schema schemas/resume.schema.json --data resume-data.json
+        run: npx --yes ajv-cli validate -s schemas/resume.schema.json -d resume-data.json --strict=true --spec=draft2020
