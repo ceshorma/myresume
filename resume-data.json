@@ -1,172 +1,485 @@
 {
-  "identity": {
-    "intro": "Hola, soy",
-    "name": "César Hormazabal",
-    "role": "Desarrollador Full Stack",
-    "summary": "Diseño y construyo productos digitales performantes, accesibles y bien pensados. Disfruto trabajar en equipos multidisciplinarios para convertir problemas complejos en soluciones simples."
-  },
-  "contact": {
-    "email": "cesar.hormazabal@email.com",
-    "links": [
-      {
-        "label": "LinkedIn",
-        "url": "https://www.linkedin.com/in/cesarhormazabal"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/cesarh"
-      },
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/cesarh"
-      }
-    ]
-  },
-  "sections": [
-    {
-      "id": "sobre-mi",
-      "number": "01",
-      "title": "Sobre mí",
-      "navLabel": "Sobre mí",
-      "type": "about",
-      "paragraphs": [
-        "Soy ingeniero en informática con más de 6 años construyendo soluciones web end-to-end. He liderado equipos, definido roadmaps técnicos y colaborado de manera estrecha con áreas de diseño, producto y negocio para entregar experiencias coherentes.",
-        "Me enfoco en crear interfaces limpias y accesibles, apoyándome en procesos iterativos, métricas de impacto y automatización para sostener la calidad en el tiempo."
-      ],
-      "skills": [
-        "TypeScript",
-        "React & Next.js",
-        "Node.js",
-        "GraphQL",
-        "PostgreSQL",
-        "Terraform"
-      ]
-    },
-    {
-      "id": "experiencia",
-      "number": "02",
-      "title": "Experiencia",
-      "navLabel": "Experiencia",
-      "type": "timeline",
-      "items": [
-        {
-          "role": "Lead Full Stack Engineer · Aurora Labs",
-          "period": "2021 — Actualidad",
-          "achievements": [
-            "Diseñé la arquitectura de una plataforma de analítica que procesa más de 2M eventos diarios, reduciendo costos de infraestructura en un 35%.",
-            "Implementé pipelines CI/CD con GitHub Actions y Terraform, disminuyendo tiempos de despliegue de horas a minutos.",
-            "Mentoricé a un equipo de 6 desarrolladores promoviendo pair programming y revisiones de código estructuradas."
-          ]
+    "defaultLanguage": "es",
+    "languages": {
+        "es": {
+            "language": {
+                "code": "es",
+                "label": "Espa\u00f1ol",
+                "shortLabel": "ES"
+            },
+            "locale": "es",
+            "metaTitle": "C\u00e9sar Hormazabal | Desarrollador Full Stack",
+            "identity": {
+                "intro": "Hola, soy",
+                "name": "C\u00e9sar Hormazabal",
+                "role": "Desarrollador Full Stack",
+                "summary": "Dise\u00f1o y construyo productos digitales performantes, accesibles y bien pensados. Disfruto trabajar en equipos multidisciplinarios para convertir problemas complejos en soluciones simples."
+            },
+            "contact": {
+                "email": "cesar.hormazabal@email.com",
+                "links": [
+                    {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/cesarhormazabal",
+                        "ariaLabel": "Abrir perfil de LinkedIn"
+                    },
+                    {
+                        "label": "GitHub",
+                        "url": "https://github.com/cesarh",
+                        "ariaLabel": "Abrir perfil de GitHub"
+                    },
+                    {
+                        "label": "Twitter",
+                        "url": "https://twitter.com/cesarh",
+                        "ariaLabel": "Abrir perfil de Twitter"
+                    }
+                ]
+            },
+            "sections": [
+                {
+                    "id": "sobre-mi",
+                    "number": "01",
+                    "title": "Sobre m\u00ed",
+                    "navLabel": "Sobre m\u00ed",
+                    "type": "about",
+                    "paragraphs": [
+                        "Soy ingeniero en inform\u00e1tica con m\u00e1s de 6 a\u00f1os construyendo soluciones web end-to-end. He liderado equipos, definido roadmaps t\u00e9cnicos y colaborado de manera estrecha con \u00e1reas de dise\u00f1o, producto y negocio para entregar experiencias coherentes.",
+                        "Me enfoco en crear interfaces limpias y accesibles, apoy\u00e1ndome en procesos iterativos, m\u00e9tricas de impacto y automatizaci\u00f3n para sostener la calidad en el tiempo."
+                    ],
+                    "skills": [
+                        "TypeScript",
+                        "React & Next.js",
+                        "Node.js",
+                        "GraphQL",
+                        "PostgreSQL",
+                        "Terraform"
+                    ]
+                },
+                {
+                    "id": "experiencia",
+                    "number": "02",
+                    "title": "Experiencia",
+                    "navLabel": "Experiencia",
+                    "type": "timeline",
+                    "items": [
+                        {
+                            "role": "Lead Full Stack Engineer \u00b7 Aurora Labs",
+                            "period": "2021 \u2014 Actualidad",
+                            "achievements": [
+                                "Dise\u00f1\u00e9 la arquitectura de una plataforma de anal\u00edtica que procesa m\u00e1s de 2M eventos diarios, reduciendo costos de infraestructura en un 35%.",
+                                "Implement\u00e9 pipelines CI/CD con GitHub Actions y Terraform, disminuyendo tiempos de despliegue de horas a minutos.",
+                                "Mentoric\u00e9 a un equipo de 6 desarrolladores promoviendo pair programming y revisiones de c\u00f3digo estructuradas."
+                            ]
+                        },
+                        {
+                            "role": "Senior Frontend Engineer \u00b7 Andina Commerce",
+                            "period": "2018 \u2014 2021",
+                            "achievements": [
+                                "Redise\u00f1\u00e9 la experiencia de compra para m\u00faltiples marcas, aumentando la tasa de conversi\u00f3n en un 18%.",
+                                "Implement\u00e9 un design system modular con Storybook, logrando un 40% de reducci\u00f3n en tiempos de entrega.",
+                                "Colabor\u00e9 con UX research para integrar m\u00e9tricas de satisfacci\u00f3n en el proceso de dise\u00f1o."
+                            ]
+                        },
+                        {
+                            "role": "Full Stack Developer \u00b7 Nube Digital",
+                            "period": "2016 \u2014 2018",
+                            "achievements": [
+                                "Constru\u00ed microservicios en Node.js para pagos y notificaciones en tiempo real.",
+                                "Integr\u00e9 monitoreo y alertas que disminuyeron incidentes cr\u00edticos en un 25%.",
+                                "Desarroll\u00e9 dashboards interactivos para clientes corporativos con React y D3.js."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "proyectos",
+                    "number": "03",
+                    "title": "Proyectos destacados",
+                    "navLabel": "Proyectos",
+                    "type": "projects",
+                    "items": [
+                        {
+                            "name": "Mapa de Energ\u00eda",
+                            "label": "Dashboard en tiempo real",
+                            "description": "Visualiza consumo energ\u00e9tico industrial, genera alertas inteligentes y produce predicciones basadas en machine learning.",
+                            "stack": [
+                                "Next.js",
+                                "GraphQL",
+                                "Supabase"
+                            ],
+                            "links": [
+                                {
+                                    "label": "GitHub",
+                                    "url": "https://github.com/cesarh/energia",
+                                    "ariaLabel": "Repositorio de Mapa de Energ\u00eda"
+                                },
+                                {
+                                    "label": "Demo",
+                                    "url": "https://energia-demo.example",
+                                    "ariaLabel": "Demo de Mapa de Energ\u00eda"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Onboarding 360",
+                            "label": "Suite de automatizaci\u00f3n",
+                            "description": "Automatiza procesos de onboarding corporativo con workflows personalizables, reportes de adopci\u00f3n y anal\u00edtica integrada.",
+                            "stack": [
+                                "React",
+                                "Node.js",
+                                "MongoDB"
+                            ],
+                            "links": [
+                                {
+                                    "label": "Caso de estudio",
+                                    "url": "https://onboarding360.example/caso",
+                                    "ariaLabel": "Caso de estudio de Onboarding 360"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "contacto",
+                    "number": "04",
+                    "title": "Contacto",
+                    "navLabel": "Contacto",
+                    "type": "contact",
+                    "paragraphs": [
+                        "Estoy abierto a proyectos donde pueda aportar valor tangible a trav\u00e9s de la tecnolog\u00eda. Si quieres colaborar o simplemente conversar, ser\u00e1 un gusto leerte."
+                    ],
+                    "cta": {
+                        "label": "Env\u00edame un mensaje",
+                        "url": "mailto:cesar.hormazabal@email.com"
+                    }
+                }
+            ],
+            "lastUpdate": "Actualizado el 9 de junio de 2024 a las 18:45 CLT",
+            "aria": {
+                "nav": "\u00cdndice de secciones",
+                "languageSwitcher": "Selecciona idioma",
+                "email": "Enviar correo a C\u00e9sar"
+            }
         },
-        {
-          "role": "Senior Frontend Engineer · Andina Commerce",
-          "period": "2018 — 2021",
-          "achievements": [
-            "Rediseñé la experiencia de compra para múltiples marcas, aumentando la tasa de conversión en un 18%.",
-            "Implementé un design system modular con Storybook, logrando un 40% de reducción en tiempos de entrega.",
-            "Colaboré con UX research para integrar métricas de satisfacción en el proceso de diseño."
-          ]
+        "en": {
+            "language": {
+                "code": "en",
+                "label": "English",
+                "shortLabel": "EN"
+            },
+            "locale": "en",
+            "metaTitle": "C\u00e9sar Hormazabal | Full Stack Developer",
+            "identity": {
+                "intro": "Hi, I'm",
+                "name": "C\u00e9sar Hormazabal",
+                "role": "Full Stack Developer",
+                "summary": "I design and build high-performing, accessible and thoughtful digital products. I enjoy partnering with multidisciplinary teams to turn complex problems into simple solutions."
+            },
+            "contact": {
+                "email": "cesar.hormazabal@email.com",
+                "links": [
+                    {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/cesarhormazabal",
+                        "ariaLabel": "Open LinkedIn profile"
+                    },
+                    {
+                        "label": "GitHub",
+                        "url": "https://github.com/cesarh",
+                        "ariaLabel": "Open GitHub profile"
+                    },
+                    {
+                        "label": "Twitter",
+                        "url": "https://twitter.com/cesarh",
+                        "ariaLabel": "Open Twitter profile"
+                    }
+                ]
+            },
+            "sections": [
+                {
+                    "id": "sobre-mi",
+                    "number": "01",
+                    "title": "About",
+                    "navLabel": "About",
+                    "type": "about",
+                    "paragraphs": [
+                        "I'm a software engineer with more than six years building end-to-end web solutions. I've led teams, defined technical roadmaps, and partnered closely with design, product, and business to deliver cohesive experiences.",
+                        "I focus on crafting clean, accessible interfaces, relying on iterative processes, impact metrics, and automation to sustain quality over time."
+                    ],
+                    "skills": [
+                        "TypeScript",
+                        "React & Next.js",
+                        "Node.js",
+                        "GraphQL",
+                        "PostgreSQL",
+                        "Terraform"
+                    ]
+                },
+                {
+                    "id": "experiencia",
+                    "number": "02",
+                    "title": "Experience",
+                    "navLabel": "Experience",
+                    "type": "timeline",
+                    "items": [
+                        {
+                            "role": "Lead Full Stack Engineer \u00b7 Aurora Labs",
+                            "period": "2021 \u2014 Present",
+                            "achievements": [
+                                "Designed the architecture of an analytics platform that processes 2M+ daily events, cutting infrastructure costs by 35%.",
+                                "Implemented CI/CD pipelines with GitHub Actions and Terraform, reducing deployment times from hours to minutes.",
+                                "Mentored a team of six engineers by promoting pair programming and structured code reviews."
+                            ]
+                        },
+                        {
+                            "role": "Senior Frontend Engineer \u00b7 Andina Commerce",
+                            "period": "2018 \u2014 2021",
+                            "achievements": [
+                                "Redesigned the purchase experience for multiple brands, boosting conversion rates by 18%.",
+                                "Rolled out a modular design system with Storybook, enabling a 40% reduction in delivery times.",
+                                "Partnered with UX research to embed satisfaction metrics into the design process."
+                            ]
+                        },
+                        {
+                            "role": "Full Stack Developer \u00b7 Nube Digital",
+                            "period": "2016 \u2014 2018",
+                            "achievements": [
+                                "Built Node.js microservices for payments and real-time notifications.",
+                                "Integrated monitoring and alerting that decreased critical incidents by 25%.",
+                                "Developed interactive dashboards for enterprise clients with React and D3.js."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "proyectos",
+                    "number": "03",
+                    "title": "Featured projects",
+                    "navLabel": "Projects",
+                    "type": "projects",
+                    "items": [
+                        {
+                            "name": "Energy Map",
+                            "label": "Real-time dashboard",
+                            "description": "Visualizes industrial energy consumption, triggers intelligent alerts, and surfaces machine learning predictions.",
+                            "stack": [
+                                "Next.js",
+                                "GraphQL",
+                                "Supabase"
+                            ],
+                            "links": [
+                                {
+                                    "label": "GitHub",
+                                    "url": "https://github.com/cesarh/energia",
+                                    "ariaLabel": "Energy Map repository"
+                                },
+                                {
+                                    "label": "Demo",
+                                    "url": "https://energia-demo.example",
+                                    "ariaLabel": "Energy Map live demo"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Onboarding 360",
+                            "label": "Automation suite",
+                            "description": "Automates corporate onboarding with customizable workflows, adoption reports, and built-in analytics.",
+                            "stack": [
+                                "React",
+                                "Node.js",
+                                "MongoDB"
+                            ],
+                            "links": [
+                                {
+                                    "label": "Case study",
+                                    "url": "https://onboarding360.example/case",
+                                    "ariaLabel": "Onboarding 360 case study"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "contacto",
+                    "number": "04",
+                    "title": "Contact",
+                    "navLabel": "Contact",
+                    "type": "contact",
+                    "paragraphs": [
+                        "I'm open to projects where technology can deliver tangible impact. If you'd like to collaborate or simply chat, I'd love to hear from you."
+                    ],
+                    "cta": {
+                        "label": "Send me a message",
+                        "url": "mailto:cesar.hormazabal@email.com"
+                    }
+                }
+            ],
+            "lastUpdate": "Last updated on June 9, 2024 at 6:45 PM CLT",
+            "aria": {
+                "nav": "Section index",
+                "languageSwitcher": "Choose language",
+                "email": "Email C\u00e9sar"
+            }
         },
-        {
-          "role": "Full Stack Developer · Nube Digital",
-          "period": "2016 — 2018",
-          "achievements": [
-            "Construí microservicios en Node.js para pagos y notificaciones en tiempo real.",
-            "Integré monitoreo y alertas que disminuyeron incidentes críticos en un 25%.",
-            "Desarrollé dashboards interactivos para clientes corporativos con React y D3.js."
-          ]
+        "pt": {
+            "language": {
+                "code": "pt",
+                "label": "Portugu\u00eas",
+                "shortLabel": "PT"
+            },
+            "locale": "pt-BR",
+            "metaTitle": "C\u00e9sar Hormazabal | Desenvolvedor Full Stack",
+            "identity": {
+                "intro": "Ol\u00e1, eu sou",
+                "name": "C\u00e9sar Hormazabal",
+                "role": "Desenvolvedor Full Stack",
+                "summary": "Desenho e construo produtos digitais perform\u00e1ticos, acess\u00edveis e bem pensados. Gosto de trabalhar com equipes multidisciplinares para transformar problemas complexos em solu\u00e7\u00f5es simples."
+            },
+            "contact": {
+                "email": "cesar.hormazabal@email.com",
+                "links": [
+                    {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/in/cesarhormazabal",
+                        "ariaLabel": "Abrir perfil no LinkedIn"
+                    },
+                    {
+                        "label": "GitHub",
+                        "url": "https://github.com/cesarh",
+                        "ariaLabel": "Abrir perfil no GitHub"
+                    },
+                    {
+                        "label": "Twitter",
+                        "url": "https://twitter.com/cesarh",
+                        "ariaLabel": "Abrir perfil no Twitter"
+                    }
+                ]
+            },
+            "sections": [
+                {
+                    "id": "sobre-mi",
+                    "number": "01",
+                    "title": "Sobre mim",
+                    "navLabel": "Sobre mim",
+                    "type": "about",
+                    "paragraphs": [
+                        "Sou engenheiro de software com mais de seis anos construindo solu\u00e7\u00f5es web ponta a ponta. Liderei equipes, defini roadmaps t\u00e9cnicos e colaborei de perto com design, produto e neg\u00f3cio para entregar experi\u00eancias consistentes.",
+                        "Tenho foco em criar interfaces limpas e acess\u00edveis, apoiado em processos iterativos, m\u00e9tricas de impacto e automa\u00e7\u00e3o para manter a qualidade ao longo do tempo."
+                    ],
+                    "skills": [
+                        "TypeScript",
+                        "React & Next.js",
+                        "Node.js",
+                        "GraphQL",
+                        "PostgreSQL",
+                        "Terraform"
+                    ]
+                },
+                {
+                    "id": "experiencia",
+                    "number": "02",
+                    "title": "Experi\u00eancia",
+                    "navLabel": "Experi\u00eancia",
+                    "type": "timeline",
+                    "items": [
+                        {
+                            "role": "Lead Full Stack Engineer \u00b7 Aurora Labs",
+                            "period": "2021 \u2014 Atual",
+                            "achievements": [
+                                "Desenhei a arquitetura de uma plataforma de analytics que processa mais de 2 milh\u00f5es de eventos di\u00e1rios, reduzindo custos de infraestrutura em 35%.",
+                                "Implementei pipelines de CI/CD com GitHub Actions e Terraform, diminuindo os tempos de deploy de horas para minutos.",
+                                "Mentorei um time de seis desenvolvedores promovendo pair programming e revis\u00f5es de c\u00f3digo estruturadas."
+                            ]
+                        },
+                        {
+                            "role": "Senior Frontend Engineer \u00b7 Andina Commerce",
+                            "period": "2018 \u2014 2021",
+                            "achievements": [
+                                "Redesenhei a experi\u00eancia de compra para v\u00e1rias marcas, aumentando a taxa de convers\u00e3o em 18%.",
+                                "Implementei um design system modular com Storybook, resultando em 40% de redu\u00e7\u00e3o no tempo de entrega.",
+                                "Colaborei com UX research para incorporar m\u00e9tricas de satisfa\u00e7\u00e3o no processo de design."
+                            ]
+                        },
+                        {
+                            "role": "Full Stack Developer \u00b7 Nube Digital",
+                            "period": "2016 \u2014 2018",
+                            "achievements": [
+                                "Constru\u00ed microsservi\u00e7os em Node.js para pagamentos e notifica\u00e7\u00f5es em tempo real.",
+                                "Integrei monitoramento e alertas que reduziram incidentes cr\u00edticos em 25%.",
+                                "Desenvolvi dashboards interativos para clientes corporativos com React e D3.js."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "proyectos",
+                    "number": "03",
+                    "title": "Projetos em destaque",
+                    "navLabel": "Projetos",
+                    "type": "projects",
+                    "items": [
+                        {
+                            "name": "Mapa de Energia",
+                            "label": "Dashboard em tempo real",
+                            "description": "Visualiza o consumo energ\u00e9tico industrial, gera alertas inteligentes e apresenta previs\u00f5es baseadas em machine learning.",
+                            "stack": [
+                                "Next.js",
+                                "GraphQL",
+                                "Supabase"
+                            ],
+                            "links": [
+                                {
+                                    "label": "GitHub",
+                                    "url": "https://github.com/cesarh/energia",
+                                    "ariaLabel": "Reposit\u00f3rio do Mapa de Energia"
+                                },
+                                {
+                                    "label": "Demo",
+                                    "url": "https://energia-demo.example",
+                                    "ariaLabel": "Demo do Mapa de Energia"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Onboarding 360",
+                            "label": "Suite de automa\u00e7\u00e3o",
+                            "description": "Automatiza processos de onboarding corporativo com fluxos personaliz\u00e1veis, relat\u00f3rios de ado\u00e7\u00e3o e analytics integrado.",
+                            "stack": [
+                                "React",
+                                "Node.js",
+                                "MongoDB"
+                            ],
+                            "links": [
+                                {
+                                    "label": "Estudo de caso",
+                                    "url": "https://onboarding360.example/caso",
+                                    "ariaLabel": "Estudo de caso de Onboarding 360"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "contacto",
+                    "number": "04",
+                    "title": "Contato",
+                    "navLabel": "Contato",
+                    "type": "contact",
+                    "paragraphs": [
+                        "Estou aberto a projetos onde a tecnologia possa gerar impacto real. Se quiser colaborar ou simplesmente trocar uma ideia, vou gostar muito de conversar."
+                    ],
+                    "cta": {
+                        "label": "Envie uma mensagem",
+                        "url": "mailto:cesar.hormazabal@email.com"
+                    }
+                }
+            ],
+            "lastUpdate": "Atualizado em 9 de junho de 2024 \u00e0s 18h45 CLT",
+            "aria": {
+                "nav": "\u00cdndice de se\u00e7\u00f5es",
+                "languageSwitcher": "Escolha o idioma",
+                "email": "Enviar e-mail para C\u00e9sar"
+            }
         }
-      ]
-    },
-    {
-      "id": "proyectos",
-      "number": "03",
-      "title": "Proyectos destacados",
-      "navLabel": "Proyectos",
-      "type": "projects",
-      "items": [
-        {
-          "name": "Mapa de Energía",
-          "label": "Dashboard en tiempo real",
-          "description": "Visualiza consumo energético industrial, genera alertas inteligentes y produce predicciones basadas en machine learning.",
-          "stack": [
-            "Next.js",
-            "GraphQL",
-            "Supabase"
-          ],
-          "links": [
-            {
-              "label": "GitHub",
-              "url": "https://github.com/cesarh/energia",
-              "ariaLabel": "Repositorio de Mapa de Energía"
-            },
-            {
-              "label": "Demo",
-              "url": "https://energia-demo.example",
-              "ariaLabel": "Demo de Mapa de Energía"
-            }
-          ]
-        },
-        {
-          "name": "Onboarding 360",
-          "label": "Suite de automatización",
-          "description": "Automatiza procesos de onboarding corporativo con workflows personalizables, reportes de adopción y analítica integrada.",
-          "stack": [
-            "React",
-            "Node.js",
-            "MongoDB"
-          ],
-          "links": [
-            {
-              "label": "GitHub",
-              "url": "https://github.com/cesarh/onboarding360",
-              "ariaLabel": "Repositorio de Onboarding 360"
-            },
-            {
-              "label": "Demo",
-              "url": "https://onboarding360.example",
-              "ariaLabel": "Demo de Onboarding 360"
-            }
-          ]
-        },
-        {
-          "name": "Insight Retail",
-          "label": "Plataforma SaaS",
-          "description": "Integra métricas de ventas, comportamiento de clientes y logística para generar recomendaciones accionables.",
-          "stack": [
-            "Vue",
-            "Firebase",
-            "Cloud Functions"
-          ],
-          "links": [
-            {
-              "label": "GitHub",
-              "url": "https://github.com/cesarh/insight-retail",
-              "ariaLabel": "Repositorio de Insight Retail"
-            },
-            {
-              "label": "Demo",
-              "url": "https://insight-retail.example",
-              "ariaLabel": "Demo de Insight Retail"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "contacto",
-      "number": "04",
-      "title": "Ponerse en contacto",
-      "navLabel": "Contacto",
-      "type": "contact",
-      "paragraphs": [
-        "Estoy abierto a proyectos donde pueda aportar valor tangible a través de la tecnología. Si quieres colaborar o simplemente conversar, será un gusto leerte."
-      ],
-      "cta": {
-        "label": "Envíame un mensaje",
-        "url": "mailto:cesar.hormazabal@email.com"
-      }
     }
-  ],
-  "lastUpdate": "Actualizado el 9 de junio de 2024 a las 18:45 CLT"
 }

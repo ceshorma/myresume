@@ -10,6 +10,11 @@ Abre `index.html` en tu navegador favorito para visualizar la página.
 
 Todo el contenido del CV vive en `resume-data.json`. Modifica ese archivo para actualizar datos personales, experiencia, proyectos u otros textos sin tocar el marcado de `index.html`. La interfaz se alimenta dinámicamente a partir de ese archivo al cargarse la página.
 
+- La clave `defaultLanguage` define el idioma que se carga por defecto. Puedes cambiarlo a `"en"` o `"pt"` según necesites.
+- Bajo `languages` encontrarás un bloque por idioma (`es`, `en`, `pt`) con los textos, etiquetas accesibles y la nota de última actualización. Mantén los mismos identificadores de sección (`id`) para conservar el enrutamiento de los enlaces.
+- Para añadir un nuevo idioma duplica cualquiera de los bloques existentes, actualiza los textos y agrega una entrada al selector de idiomas con un código y etiquetas propios.
+- Actualiza `lastUpdate` en cada idioma para reflejar cuándo hiciste modificaciones relevantes.
+
 ## Despliegue recomendado
 
 Para probar los cambios en un entorno real puedes optar por cualquiera de estas opciones:

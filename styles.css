@@ -121,16 +121,52 @@ body {
 
 .sidebar__nav a:hover,
 .sidebar__nav a:focus,
-.sidebar__nav a:focus-visible {
+.sidebar__nav a:focus-visible,
+.sidebar__nav a.is-active {
   color: var(--accent);
   transform: translateX(6px);
 }
 
 .sidebar__nav a:hover::before,
 .sidebar__nav a:focus::before,
-.sidebar__nav a:focus-visible::before {
+.sidebar__nav a:focus-visible::before,
+.sidebar__nav a.is-active::before {
   opacity: 1;
   transform: scaleX(1);
+}
+
+.sidebar__languages {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.sidebar__language {
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.sidebar__language:hover,
+.sidebar__language:focus,
+.sidebar__language:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  transform: translateY(-1px);
+}
+
+.sidebar__language.is-active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
 }
 
 .sidebar__contact {
@@ -207,14 +243,18 @@ body {
 
 .section:hover,
 .section:focus-within,
-.section:target {
+.section:focus-visible,
+.section:target,
+.section.is-active {
   transform: translateY(-4px);
   box-shadow: 0 35px 80px -45px rgba(7, 12, 24, 0.9);
 }
 
 .section:hover::before,
 .section:focus-within::before,
-.section:target::before {
+.section:focus-visible::before,
+.section:target::before,
+.section.is-active::before {
   opacity: 1;
   transform: translateY(0);
 }
@@ -293,13 +333,15 @@ body {
 }
 
 .timeline__item:hover,
-.timeline__item:focus-within {
+.timeline__item:focus-within,
+.timeline__item:focus-visible {
   transform: translateY(-4px);
   box-shadow: 0 28px 60px -40px rgba(7, 12, 24, 0.85);
 }
 
 .timeline__item:hover::before,
-.timeline__item:focus-within::before {
+.timeline__item:focus-within::before,
+.timeline__item:focus-visible::before {
   opacity: 1;
   transform: translateY(0);
 }
@@ -365,14 +407,16 @@ body {
 }
 
 .project:hover,
-.project:focus-within {
+.project:focus-within,
+.project:focus-visible {
   transform: translateY(-4px);
   border-color: rgba(100, 255, 218, 0.35);
   box-shadow: 0 30px 70px -45px rgba(7, 12, 24, 0.9);
 }
 
 .project:hover::before,
-.project:focus-within::before {
+.project:focus-within::before,
+.project:focus-visible::before {
   opacity: 1;
   transform: translateY(0);
 }
