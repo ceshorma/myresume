@@ -4,6 +4,9 @@ const state = {
   sectionObserver: null,
   navigationLinks: new Map(),
   activeSectionId: null,
+  sectionElements: [],
+  scrollHandler: null,
+  scrollFrame: null,
 };
 
 document.addEventListener('DOMContentLoaded', loadResume);
@@ -416,11 +419,16 @@ function renderContactSection(section) {
 }
 
 function setupSectionObserver() {
-  const sections = document.querySelectorAll('.section');
+  const sections = Array.from(document.querySelectorAll('.section'));
   if (!sections.length) return;
 
-  disconnectObserver();
+  if (state.sectionObserver) {
+    state.sectionObserver.disconnect();
+  }
 
+  teardownScrollTracking();
+
+  state.sectionElements = sections;
   state.sectionObserver = new IntersectionObserver(handleSectionIntersect, {
     root: null,
     threshold: [0.35, 0.6, 0.85],
@@ -428,11 +436,12 @@ function setupSectionObserver() {
   });
 
   sections.forEach((section) => state.sectionObserver.observe(section));
+  setupScrollTracking();
 }
 
 function handleSectionIntersect(entries) {
   const visibleEntries = entries
-    .filter((entry) => entry.isIntersecting)
+    .filter((entry) => entry.isIntersecting || entry.intersectionRatio > 0)
     .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
   if (visibleEntries.length === 0) {
@@ -498,10 +507,76 @@ function disconnectObserver() {
     state.sectionObserver.disconnect();
     state.sectionObserver = null;
   }
+
+  teardownScrollTracking();
+  state.sectionElements = [];
 }
 
 function setText(id, value = '') {
   const node = document.getElementById(id);
   if (!node) return;
   node.textContent = value || '';
+}
+
+function setupScrollTracking() {
+  teardownScrollTracking();
+
+  state.scrollHandler = () => {
+    if (state.scrollFrame) return;
+    state.scrollFrame = requestAnimationFrame(syncActiveSectionByScroll);
+  };
+
+  window.addEventListener('scroll', state.scrollHandler, { passive: true });
+  window.addEventListener('resize', state.scrollHandler);
+  state.scrollHandler();
+}
+
+function teardownScrollTracking() {
+  if (state.scrollHandler) {
+    window.removeEventListener('scroll', state.scrollHandler);
+    window.removeEventListener('resize', state.scrollHandler);
+    state.scrollHandler = null;
+  }
+
+  if (state.scrollFrame) {
+    cancelAnimationFrame(state.scrollFrame);
+    state.scrollFrame = null;
+  }
+}
+
+function syncActiveSectionByScroll() {
+  state.scrollFrame = null;
+
+  if (!state.sectionElements.length) return;
+
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+  const targetLine = viewportHeight * 0.35;
+  let bestSection = null;
+  let bestDistance = Infinity;
+
+  state.sectionElements.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.height === 0) return;
+
+    const sectionTop = rect.top;
+    const sectionBottom = rect.bottom;
+    const isVisible = sectionBottom > viewportHeight * 0.15 && sectionTop < viewportHeight * 0.85;
+
+    if (!isVisible) return;
+
+    const distance = Math.abs(sectionTop - targetLine);
+    if (distance < bestDistance) {
+      bestSection = section;
+      bestDistance = distance;
+    }
+  });
+
+  if (!bestSection) {
+    const firstBelow = state.sectionElements.find((section) => section.getBoundingClientRect().top >= 0);
+    bestSection = firstBelow || state.sectionElements[state.sectionElements.length - 1];
+  }
+
+  if (bestSection) {
+    setActiveSection(bestSection.id);
+  }
 }
