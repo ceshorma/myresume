@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panel de edición del CV</title>
+    <link rel="stylesheet" href="../design-tokens.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="top-bar__brand">
+        <h1>Panel de edición del CV</h1>
+        <p>Modifica el contenido del JSON con validación en vivo.</p>
+      </div>
+      <div class="top-bar__actions">
+        <label class="field field--inline">
+          <span>Idioma activo</span>
+          <select id="language-selector"></select>
+        </label>
+        <button type="button" id="duplicate-language" class="button button--secondary">Duplicar idioma</button>
+        <button type="button" id="delete-language" class="button button--ghost">Eliminar idioma</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="layout__column layout__column--primary" id="editor-column">
+        <div class="card" id="default-language-card"></div>
+        <div class="card" id="language-card"></div>
+        <div class="card" id="identity-card"></div>
+        <div class="card" id="contact-card"></div>
+        <div class="card" id="sections-card"></div>
+      </section>
+      <aside class="layout__column layout__column--secondary">
+        <div class="card" id="validation-card">
+          <h2>Estado de validación</h2>
+          <p id="validation-status" class="status status--neutral">Cargando…</p>
+          <ul id="validation-errors" class="status-list"></ul>
+        </div>
+        <div class="card" id="export-card">
+          <h2>Exportar JSON</h2>
+          <div class="export-actions">
+            <button type="button" id="copy-json" class="button">Copiar al portapapeles</button>
+            <button type="button" id="download-json" class="button button--secondary">Descargar archivo</button>
+          </div>
+          <label class="field">
+            <span>Vista previa</span>
+            <textarea id="json-preview" readonly></textarea>
+          </label>
+        </div>
+        <div class="card" id="icon-reference-card">
+          <h2>Iconos disponibles</h2>
+          <div class="icon-list" id="icon-reference"></div>
+        </div>
+      </aside>
+    </main>
+
+    <template id="array-item-template">
+      <div class="array-item"></div>
+    </template>
+
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>

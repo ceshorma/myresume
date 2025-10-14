@@ -19,6 +19,23 @@ Todo el contenido del CV vive en `resume-data.json`. Modifica ese archivo para a
 - Cada proyecto admite el objeto `image` con `src`, `alt` y `caption`. Las ilustraciones de referencia viven en `assets/images/projects/` y puedes reemplazarlas por capturas reales cuando las tengas.
 - Usa `actions.backToTop` en cada idioma para personalizar la etiqueta del botón “volver arriba”.
 
+#### Panel `/admin`
+
+- Abre `admin/index.html` en tu navegador para utilizar el formulario artesanal que edita el JSON. La interfaz permite seleccionar idioma, modificar cada sección, gestionar arrays (párrafos, logros, proyectos, etc.) y muestra errores de validación en tiempo real.
+- El panel ofrece acciones para copiar el JSON al portapapeles o descargarlo como archivo. Después de descargar, reemplaza `resume-data.json` en tu rama y crea el PR habitual.
+- Desde la tarjeta de iconos verás los *slugs* disponibles en `SOCIAL_ICON_MAP` y `TECH_ICON_MAP` para evitar errores al asignar iconos a enlaces o stacks. Si necesitas uno nuevo, añade el SVG a `assets/icons/` y declara su ruta en `tech-icons.js`.
+
+#### Validación con Ajv
+
+- El archivo `schemas/resume.schema.json` describe el formato completo de `resume-data.json`. Puedes validarlo manualmente instalando las dependencias y ejecutando el script de Node:
+
+  ```bash
+  npm install
+  npm run validate
+  ```
+
+- Cada push o PR que toque el JSON se valida automáticamente mediante el *workflow* `validate-json.yml`, que utiliza el mismo script con soporte para formatos adicionales como correos electrónicos. Si el schema falla, el PR quedará en rojo hasta que el JSON cumpla la estructura definida.
+
 ### Ajustar el diseño
 
 - Los colores, tipografías y dimensiones globales se controlan mediante variables CSS en `design-tokens.css`. Edita ese archivo para personalizar la identidad visual sin modificar las reglas de estilo base.
