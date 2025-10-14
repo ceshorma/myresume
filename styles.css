@@ -1,15 +1,3 @@
-:root {
-  --bg: #0b1220;
-  --bg-soft: #101a2d;
-  --text: #e2e8f0;
-  --text-muted: #94a3b8;
-  --accent: #64ffda;
-  --accent-soft: rgba(100, 255, 218, 0.15);
-  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'Fira Code', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  --max-width: 1200px;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -224,39 +212,10 @@ body {
   scroll-margin-top: 3rem;
   position: relative;
   z-index: 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section::before {
-  content: '';
-  position: absolute;
-  inset: -1.6rem;
-  border-radius: 2rem;
-  background: rgba(100, 255, 218, 0.08);
-  border: 1px solid rgba(100, 255, 218, 0.18);
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.section:hover,
-.section:focus-within,
-.section:focus-visible,
-.section:target,
-.section.is-active {
-  transform: translateY(-4px);
-  box-shadow: 0 35px 80px -45px rgba(7, 12, 24, 0.9);
-}
-
-.section:hover::before,
-.section:focus-within::before,
-.section:focus-visible::before,
-.section:target::before,
-.section.is-active::before {
-  opacity: 1;
-  transform: translateY(0);
+  content: none;
 }
 
 .section__header {
@@ -530,11 +489,6 @@ body {
     padding-right: 0;
   }
 
-  .section::before {
-    inset: -1.1rem;
-    border-radius: 1.6rem;
-  }
-
   .timeline__item {
     padding: 1.25rem 1.4rem;
   }
@@ -569,11 +523,6 @@ body {
 
   .section__header {
     gap: 1rem;
-  }
-
-  .section::before {
-    inset: -0.8rem;
-    border-radius: 1.4rem;
   }
 
   .timeline__item {

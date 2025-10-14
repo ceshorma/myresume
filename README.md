@@ -15,6 +15,11 @@ Todo el contenido del CV vive en `resume-data.json`. Modifica ese archivo para a
 - Para añadir un nuevo idioma duplica cualquiera de los bloques existentes, actualiza los textos y agrega una entrada al selector de idiomas con un código y etiquetas propios.
 - Actualiza `lastUpdate` en cada idioma para reflejar cuándo hiciste modificaciones relevantes.
 
+### Ajustar el diseño
+
+- Los colores, tipografías y dimensiones globales se controlan mediante variables CSS en `design-tokens.css`. Edita ese archivo para personalizar la identidad visual sin modificar las reglas de estilo base.
+- Las reglas de disposición y comportamiento viven en `styles.css`, donde se consumen los *tokens* definidos previamente. Evita hardcodear valores decorativos ahí para mantener la separación entre contenido y diseño.
+
 ## Despliegue recomendado
 
 Para probar los cambios en un entorno real puedes optar por cualquiera de estas opciones:
