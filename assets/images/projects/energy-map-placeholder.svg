@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Energy Map placeholder</title>
+  <desc id="desc">Abstract dashboard illustration with glowing chart lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.4" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)" rx="48" />
+  <rect x="80" y="96" width="1120" height="528" rx="32" fill="#0b1220" stroke="#1e293b" stroke-width="2" />
+  <rect x="120" y="144" width="160" height="24" rx="12" fill="#0f172a" stroke="#1f2937" />
+  <rect x="296" y="144" width="96" height="24" rx="12" fill="#0f172a" stroke="#1f2937" />
+  <rect x="408" y="144" width="120" height="24" rx="12" fill="#0f172a" stroke="#1f2937" />
+  <rect x="552" y="144" width="152" height="24" rx="12" fill="#0f172a" stroke="#1f2937" />
+  <path d="M180 432 C320 280 420 520 600 360 C760 220 880 500 1040 340" fill="none" stroke="url(#glow)" stroke-width="14" filter="url(#softGlow)" />
+  <path d="M200 468 C340 360 460 540 620 396 C760 272 900 504 1040 380" fill="none" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="6" />
+  <g fill="none" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1">
+    <path d="M200 520 H1080" />
+    <path d="M200 460 H1080" />
+    <path d="M200 400 H1080" />
+    <path d="M200 340 H1080" />
+  </g>
+  <rect x="200" y="220" width="240" height="120" rx="24" fill="url(#accent)" opacity="0.35" />
+  <rect x="472" y="220" width="180" height="120" rx="24" fill="#0f172a" opacity="0.4" />
+  <rect x="680" y="220" width="140" height="120" rx="24" fill="#0f172a" opacity="0.4" />
+  <rect x="852" y="220" width="200" height="120" rx="24" fill="#0f172a" opacity="0.4" />
+  <text x="200" y="530" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="28" letter-spacing="6">ENERGY MAP</text>
+</svg>
