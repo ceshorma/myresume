@@ -1,0 +1,25 @@
+name: Validate resume data
+
+on:
+  push:
+    paths:
+      - "resume-data.json"
+      - "schemas/**"
+      - ".github/workflows/validate-json.yml"
+  pull_request:
+    paths:
+      - "resume-data.json"
+      - "schemas/**"
+
+jobs:
+  ajv-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate resume data against schema
+        run: npx --yes ajv-cli validate --strict=true --spec=draft2020 --schema schemas/resume.schema.json --data resume-data.json
