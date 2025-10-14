@@ -6,6 +6,10 @@ Este repositorio contiene el CV en formato web de César Hormazabal inspirado en
 
 Abre `index.html` en tu navegador favorito para visualizar la página.
 
+### Editar el contenido
+
+Todo el contenido del CV vive en `resume-data.json`. Modifica ese archivo para actualizar datos personales, experiencia, proyectos u otros textos sin tocar el marcado de `index.html`. La interfaz se alimenta dinámicamente a partir de ese archivo al cargarse la página.
+
 ## Despliegue recomendado
 
 Para probar los cambios en un entorno real puedes optar por cualquiera de estas opciones:
