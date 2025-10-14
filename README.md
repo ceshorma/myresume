@@ -27,14 +27,14 @@ Todo el contenido del CV vive en `resume-data.json`. Modifica ese archivo para a
 
 #### Validación con Ajv
 
-- El archivo `schemas/resume.schema.json` describe el formato completo de `resume-data.json`. Puedes validarlo manualmente ejecutando:
+- El archivo `schemas/resume.schema.json` describe el formato completo de `resume-data.json`. Puedes validarlo manualmente instalando las dependencias y ejecutando el script de Node:
 
   ```bash
-  npx --yes ajv-cli validate -s schemas/resume.schema.json \
-    -d resume-data.json --strict=true --spec=draft2020
+  npm install
+  npm run validate
   ```
 
-- Cada push o PR que toque el JSON se valida automáticamente mediante el *workflow* `validate-json.yml`. Si el schema falla, el PR quedará en rojo hasta que el JSON cumpla la estructura definida.
+- Cada push o PR que toque el JSON se valida automáticamente mediante el *workflow* `validate-json.yml`, que utiliza el mismo script con soporte para formatos adicionales como correos electrónicos. Si el schema falla, el PR quedará en rojo hasta que el JSON cumpla la estructura definida.
 
 ### Ajustar el diseño
 

@@ -6,10 +6,14 @@ on:
       - "resume-data.json"
       - "schemas/**"
       - ".github/workflows/validate-json.yml"
+      - "package.json"
+      - "validate.js"
   pull_request:
     paths:
       - "resume-data.json"
       - "schemas/**"
+      - "package.json"
+      - "validate.js"
 
 jobs:
   ajv-validate:
@@ -21,5 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Install dependencies
+        run: npm install
       - name: Validate resume data against schema
-        run: npx --yes ajv-cli validate -s schemas/resume.schema.json -d resume-data.json --strict=true --spec=draft2020
+        run: npm run validate
