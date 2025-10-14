@@ -1,485 +1,542 @@
 {
-    "defaultLanguage": "es",
-    "languages": {
-        "es": {
-            "language": {
-                "code": "es",
-                "label": "Espa\u00f1ol",
-                "shortLabel": "ES"
-            },
-            "locale": "es",
-            "metaTitle": "C\u00e9sar Hormazabal | Desarrollador Full Stack",
-            "identity": {
-                "intro": "Hola, soy",
-                "name": "C\u00e9sar Hormazabal",
-                "role": "Desarrollador Full Stack",
-                "summary": "Dise\u00f1o y construyo productos digitales performantes, accesibles y bien pensados. Disfruto trabajar en equipos multidisciplinarios para convertir problemas complejos en soluciones simples."
-            },
-            "contact": {
-                "email": "cesar.hormazabal@email.com",
-                "links": [
-                    {
-                        "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/in/cesarhormazabal",
-                        "ariaLabel": "Abrir perfil de LinkedIn"
-                    },
-                    {
-                        "label": "GitHub",
-                        "url": "https://github.com/cesarh",
-                        "ariaLabel": "Abrir perfil de GitHub"
-                    },
-                    {
-                        "label": "Twitter",
-                        "url": "https://twitter.com/cesarh",
-                        "ariaLabel": "Abrir perfil de Twitter"
-                    }
-                ]
-            },
-            "sections": [
-                {
-                    "id": "sobre-mi",
-                    "number": "01",
-                    "title": "Sobre m\u00ed",
-                    "navLabel": "Sobre m\u00ed",
-                    "type": "about",
-                    "paragraphs": [
-                        "Soy ingeniero en inform\u00e1tica con m\u00e1s de 6 a\u00f1os construyendo soluciones web end-to-end. He liderado equipos, definido roadmaps t\u00e9cnicos y colaborado de manera estrecha con \u00e1reas de dise\u00f1o, producto y negocio para entregar experiencias coherentes.",
-                        "Me enfoco en crear interfaces limpias y accesibles, apoy\u00e1ndome en procesos iterativos, m\u00e9tricas de impacto y automatizaci\u00f3n para sostener la calidad en el tiempo."
-                    ],
-                    "skills": [
-                        "TypeScript",
-                        "React & Next.js",
-                        "Node.js",
-                        "GraphQL",
-                        "PostgreSQL",
-                        "Terraform"
-                    ]
-                },
-                {
-                    "id": "experiencia",
-                    "number": "02",
-                    "title": "Experiencia",
-                    "navLabel": "Experiencia",
-                    "type": "timeline",
-                    "items": [
-                        {
-                            "role": "Lead Full Stack Engineer \u00b7 Aurora Labs",
-                            "period": "2021 \u2014 Actualidad",
-                            "achievements": [
-                                "Dise\u00f1\u00e9 la arquitectura de una plataforma de anal\u00edtica que procesa m\u00e1s de 2M eventos diarios, reduciendo costos de infraestructura en un 35%.",
-                                "Implement\u00e9 pipelines CI/CD con GitHub Actions y Terraform, disminuyendo tiempos de despliegue de horas a minutos.",
-                                "Mentoric\u00e9 a un equipo de 6 desarrolladores promoviendo pair programming y revisiones de c\u00f3digo estructuradas."
-                            ]
-                        },
-                        {
-                            "role": "Senior Frontend Engineer \u00b7 Andina Commerce",
-                            "period": "2018 \u2014 2021",
-                            "achievements": [
-                                "Redise\u00f1\u00e9 la experiencia de compra para m\u00faltiples marcas, aumentando la tasa de conversi\u00f3n en un 18%.",
-                                "Implement\u00e9 un design system modular con Storybook, logrando un 40% de reducci\u00f3n en tiempos de entrega.",
-                                "Colabor\u00e9 con UX research para integrar m\u00e9tricas de satisfacci\u00f3n en el proceso de dise\u00f1o."
-                            ]
-                        },
-                        {
-                            "role": "Full Stack Developer \u00b7 Nube Digital",
-                            "period": "2016 \u2014 2018",
-                            "achievements": [
-                                "Constru\u00ed microservicios en Node.js para pagos y notificaciones en tiempo real.",
-                                "Integr\u00e9 monitoreo y alertas que disminuyeron incidentes cr\u00edticos en un 25%.",
-                                "Desarroll\u00e9 dashboards interactivos para clientes corporativos con React y D3.js."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "proyectos",
-                    "number": "03",
-                    "title": "Proyectos destacados",
-                    "navLabel": "Proyectos",
-                    "type": "projects",
-                    "items": [
-                        {
-                            "name": "Mapa de Energ\u00eda",
-                            "label": "Dashboard en tiempo real",
-                            "description": "Visualiza consumo energ\u00e9tico industrial, genera alertas inteligentes y produce predicciones basadas en machine learning.",
-                            "stack": [
-                                "Next.js",
-                                "GraphQL",
-                                "Supabase"
-                            ],
-                            "links": [
-                                {
-                                    "label": "GitHub",
-                                    "url": "https://github.com/cesarh/energia",
-                                    "ariaLabel": "Repositorio de Mapa de Energ\u00eda"
-                                },
-                                {
-                                    "label": "Demo",
-                                    "url": "https://energia-demo.example",
-                                    "ariaLabel": "Demo de Mapa de Energ\u00eda"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Onboarding 360",
-                            "label": "Suite de automatizaci\u00f3n",
-                            "description": "Automatiza procesos de onboarding corporativo con workflows personalizables, reportes de adopci\u00f3n y anal\u00edtica integrada.",
-                            "stack": [
-                                "React",
-                                "Node.js",
-                                "MongoDB"
-                            ],
-                            "links": [
-                                {
-                                    "label": "Caso de estudio",
-                                    "url": "https://onboarding360.example/caso",
-                                    "ariaLabel": "Caso de estudio de Onboarding 360"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "contacto",
-                    "number": "04",
-                    "title": "Contacto",
-                    "navLabel": "Contacto",
-                    "type": "contact",
-                    "paragraphs": [
-                        "Estoy abierto a proyectos donde pueda aportar valor tangible a trav\u00e9s de la tecnolog\u00eda. Si quieres colaborar o simplemente conversar, ser\u00e1 un gusto leerte."
-                    ],
-                    "cta": {
-                        "label": "Env\u00edame un mensaje",
-                        "url": "mailto:cesar.hormazabal@email.com"
-                    }
-                }
-            ],
-            "lastUpdate": "Actualizado el 9 de junio de 2024 a las 18:45 CLT",
-            "aria": {
-                "nav": "\u00cdndice de secciones",
-                "languageSwitcher": "Selecciona idioma",
-                "email": "Enviar correo a C\u00e9sar"
-            }
+  "defaultLanguage": "es",
+  "languages": {
+    "es": {
+      "language": {
+        "code": "es",
+        "label": "Español",
+        "shortLabel": "ES"
+      },
+      "locale": "es",
+      "metaTitle": "César Hormazábal | Gerente de IA y Ciencia de Datos",
+      "identity": {
+        "intro": "Hola, soy",
+        "name": "César Hormazábal",
+        "role": "Gerente de IA y Ciencia de Datos",
+        "summary": "Ingeniero Matemático y líder de IA con 15 años de experiencia impulsando soluciones basadas en datos en minería, energía, transporte y retail en LATAM. Capacidad probada para liderar equipos multifuncionales, diseñar arquitecturas end‑to‑end y generar impacto de negocio a través de modelamiento predictivo, visión computacional y IA generativa. Experto en consultoría y preventa, con foco en alinear excelencia técnica con resultados financieros. Experiencia en tecnologías cloud‑native (Azure, Databricks, AWS) y compromiso con la formación de talentos técnicos. Busco ampliar mi liderazgo en iniciativas internacionales de alto impacto.【19†source】"
+      },
+      "contact": {
+        "email": "cesar.hormazabal@outlook.es",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/in/hormazabalcesar",
+            "ariaLabel": "Abrir perfil de LinkedIn"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "sobre-mi",
+          "number": "01",
+          "title": "Sobre mí",
+          "navLabel": "Sobre mí",
+          "type": "about",
+          "paragraphs": [
+            "Gerente Senior en IA y Datos en EY Chile, liderando equipos de hasta 30 personas para entregar soluciones de analítica avanzada y productos de IA en minería, transporte e industria en LATAM.【19†source】",
+            "Enfocado en soluciones end‑to‑end, estrategia de datos, MLOps y adopción de nube (Azure, Databricks)."
+          ],
+          "skills": [
+            "Python",
+            "R",
+            "SQL",
+            "XGBoost",
+            "scikit‑learn",
+            "TensorFlow",
+            "Statsmodels",
+            "Azure (Data Factory, Databricks)",
+            "AWS (básico)",
+            "Power BI",
+            "Tableau",
+            "Git",
+            "Docker",
+            "REST APIs"
+          ]
         },
-        "en": {
-            "language": {
-                "code": "en",
-                "label": "English",
-                "shortLabel": "EN"
+        {
+          "id": "experiencia",
+          "number": "02",
+          "title": "Experiencia",
+          "navLabel": "Experiencia",
+          "type": "timeline",
+          "items": [
+            {
+              "role": "Senior Manager – AI & Data · EY Chile",
+              "period": "Ago 2021 — Actualidad",
+              "achievements": [
+                "Gestión de equipos multifuncionales (hasta 30 miembros simultáneos dentro de un pool senior de ~80) para proyectos de IA en minería, transporte e industria en LATAM.【19†source】",
+                "Relación estratégica con Codelco bajo marco de compras públicas; creación de laboratorio de Visión Computacional e IA Generativa con múltiples PoCs para producción y gestión de activos.【19†source】",
+                "Co‑liderazgo de optimización de patio ferroviario para Ferromex (México) mediante algoritmo de optimización de flujo (en despliegue).【19†source】",
+                "Diseño de arquitectura, desarrollo de propuestas y estrategia de datos a largo plazo como parte del liderazgo nacional de IA de EY.【19†source】",
+                "Tecnologías: Azure, Databricks, pipelines en Python, MLOps.【19†source】"
+              ]
             },
-            "locale": "en",
-            "metaTitle": "C\u00e9sar Hormazabal | Full Stack Developer",
-            "identity": {
-                "intro": "Hi, I'm",
-                "name": "C\u00e9sar Hormazabal",
-                "role": "Full Stack Developer",
-                "summary": "I design and build high-performing, accessible and thoughtful digital products. I enjoy partnering with multidisciplinary teams to turn complex problems into simple solutions."
+            {
+              "role": "Co‑Founder & Lead Data Consultant · Lighthouse Lab (LATAM)",
+              "period": "2018 — 2021",
+              "achievements": [
+                "Consultoría boutique en ciencia de datos para forecasting, modelamiento de demanda y estrategia de IA en Chile, Guatemala y Panamá.【19†source】",
+                "Modelo de proyección de demanda eléctrica para AES Gener, usado en planificación de inversión en generación.【19†source】",
+                "Forecast de demanda de cemento para Cempro (Guatemala) para decisiones comerciales estratégicas.【19†source】",
+                "Sistema de recomendación B2B para Dicarina (Panamá), optimizando sugerencias en ventas mayoristas.【19†source】"
+              ]
             },
-            "contact": {
-                "email": "cesar.hormazabal@email.com",
-                "links": [
-                    {
-                        "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/in/cesarhormazabal",
-                        "ariaLabel": "Open LinkedIn profile"
-                    },
-                    {
-                        "label": "GitHub",
-                        "url": "https://github.com/cesarh",
-                        "ariaLabel": "Open GitHub profile"
-                    },
-                    {
-                        "label": "Twitter",
-                        "url": "https://twitter.com/cesarh",
-                        "ariaLabel": "Open Twitter profile"
-                    }
-                ]
-            },
-            "sections": [
-                {
-                    "id": "sobre-mi",
-                    "number": "01",
-                    "title": "About",
-                    "navLabel": "About",
-                    "type": "about",
-                    "paragraphs": [
-                        "I'm a software engineer with more than six years building end-to-end web solutions. I've led teams, defined technical roadmaps, and partnered closely with design, product, and business to deliver cohesive experiences.",
-                        "I focus on crafting clean, accessible interfaces, relying on iterative processes, impact metrics, and automation to sustain quality over time."
-                    ],
-                    "skills": [
-                        "TypeScript",
-                        "React & Next.js",
-                        "Node.js",
-                        "GraphQL",
-                        "PostgreSQL",
-                        "Terraform"
-                    ]
-                },
-                {
-                    "id": "experiencia",
-                    "number": "02",
-                    "title": "Experience",
-                    "navLabel": "Experience",
-                    "type": "timeline",
-                    "items": [
-                        {
-                            "role": "Lead Full Stack Engineer \u00b7 Aurora Labs",
-                            "period": "2021 \u2014 Present",
-                            "achievements": [
-                                "Designed the architecture of an analytics platform that processes 2M+ daily events, cutting infrastructure costs by 35%.",
-                                "Implemented CI/CD pipelines with GitHub Actions and Terraform, reducing deployment times from hours to minutes.",
-                                "Mentored a team of six engineers by promoting pair programming and structured code reviews."
-                            ]
-                        },
-                        {
-                            "role": "Senior Frontend Engineer \u00b7 Andina Commerce",
-                            "period": "2018 \u2014 2021",
-                            "achievements": [
-                                "Redesigned the purchase experience for multiple brands, boosting conversion rates by 18%.",
-                                "Rolled out a modular design system with Storybook, enabling a 40% reduction in delivery times.",
-                                "Partnered with UX research to embed satisfaction metrics into the design process."
-                            ]
-                        },
-                        {
-                            "role": "Full Stack Developer \u00b7 Nube Digital",
-                            "period": "2016 \u2014 2018",
-                            "achievements": [
-                                "Built Node.js microservices for payments and real-time notifications.",
-                                "Integrated monitoring and alerting that decreased critical incidents by 25%.",
-                                "Developed interactive dashboards for enterprise clients with React and D3.js."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "proyectos",
-                    "number": "03",
-                    "title": "Featured projects",
-                    "navLabel": "Projects",
-                    "type": "projects",
-                    "items": [
-                        {
-                            "name": "Energy Map",
-                            "label": "Real-time dashboard",
-                            "description": "Visualizes industrial energy consumption, triggers intelligent alerts, and surfaces machine learning predictions.",
-                            "stack": [
-                                "Next.js",
-                                "GraphQL",
-                                "Supabase"
-                            ],
-                            "links": [
-                                {
-                                    "label": "GitHub",
-                                    "url": "https://github.com/cesarh/energia",
-                                    "ariaLabel": "Energy Map repository"
-                                },
-                                {
-                                    "label": "Demo",
-                                    "url": "https://energia-demo.example",
-                                    "ariaLabel": "Energy Map live demo"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Onboarding 360",
-                            "label": "Automation suite",
-                            "description": "Automates corporate onboarding with customizable workflows, adoption reports, and built-in analytics.",
-                            "stack": [
-                                "React",
-                                "Node.js",
-                                "MongoDB"
-                            ],
-                            "links": [
-                                {
-                                    "label": "Case study",
-                                    "url": "https://onboarding360.example/case",
-                                    "ariaLabel": "Onboarding 360 case study"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "contacto",
-                    "number": "04",
-                    "title": "Contact",
-                    "navLabel": "Contact",
-                    "type": "contact",
-                    "paragraphs": [
-                        "I'm open to projects where technology can deliver tangible impact. If you'd like to collaborate or simply chat, I'd love to hear from you."
-                    ],
-                    "cta": {
-                        "label": "Send me a message",
-                        "url": "mailto:cesar.hormazabal@email.com"
-                    }
-                }
-            ],
-            "lastUpdate": "Last updated on June 9, 2024 at 6:45 PM CLT",
-            "aria": {
-                "nav": "Section index",
-                "languageSwitcher": "Choose language",
-                "email": "Email C\u00e9sar"
+            {
+              "role": "Senior Data Scientist · MetricArts (Chile)",
+              "period": "2016 — 2018",
+              "achievements": [
+                "Modelos predictivos para sector público y empresas; diseño de scoring de riesgo para ChileCompra para detectar anomalías de compras.【19†source】"
+              ]
             }
+          ]
         },
-        "pt": {
-            "language": {
-                "code": "pt",
-                "label": "Portugu\u00eas",
-                "shortLabel": "PT"
+        {
+          "id": "proyectos",
+          "number": "03",
+          "title": "Proyectos destacados",
+          "navLabel": "Proyectos",
+          "type": "projects",
+          "items": [
+            {
+              "name": "Optimización de Patio Ferroviario Ferromex",
+              "label": "Algoritmo de optimización de flujo",
+              "description": "Diseño de algoritmo para ordenar maniobras y maximizar utilización de carros en patio, actualmente en despliegue.【19†source】",
+              "stack": [
+                "Python",
+                "Optimización",
+                "Azure",
+                "MLOps"
+              ]
             },
-            "locale": "pt-BR",
-            "metaTitle": "C\u00e9sar Hormazabal | Desenvolvedor Full Stack",
-            "identity": {
-                "intro": "Ol\u00e1, eu sou",
-                "name": "C\u00e9sar Hormazabal",
-                "role": "Desenvolvedor Full Stack",
-                "summary": "Desenho e construo produtos digitais perform\u00e1ticos, acess\u00edveis e bem pensados. Gosto de trabalhar com equipes multidisciplinares para transformar problemas complexos em solu\u00e7\u00f5es simples."
+            {
+              "name": "Laboratorio de CV & IA Generativa Codelco",
+              "label": "PoCs de producción y activos",
+              "description": "Creación de laboratorio para visión computacional e IA generativa con PoCs orientadas a operaciones y mantenimiento.【19†source】",
+              "stack": [
+                "Computer Vision",
+                "Generative AI",
+                "Databricks",
+                "Azure"
+              ]
             },
-            "contact": {
-                "email": "cesar.hormazabal@email.com",
-                "links": [
-                    {
-                        "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/in/cesarhormazabal",
-                        "ariaLabel": "Abrir perfil no LinkedIn"
-                    },
-                    {
-                        "label": "GitHub",
-                        "url": "https://github.com/cesarh",
-                        "ariaLabel": "Abrir perfil no GitHub"
-                    },
-                    {
-                        "label": "Twitter",
-                        "url": "https://twitter.com/cesarh",
-                        "ariaLabel": "Abrir perfil no Twitter"
-                    }
-                ]
-            },
-            "sections": [
-                {
-                    "id": "sobre-mi",
-                    "number": "01",
-                    "title": "Sobre mim",
-                    "navLabel": "Sobre mim",
-                    "type": "about",
-                    "paragraphs": [
-                        "Sou engenheiro de software com mais de seis anos construindo solu\u00e7\u00f5es web ponta a ponta. Liderei equipes, defini roadmaps t\u00e9cnicos e colaborei de perto com design, produto e neg\u00f3cio para entregar experi\u00eancias consistentes.",
-                        "Tenho foco em criar interfaces limpas e acess\u00edveis, apoiado em processos iterativos, m\u00e9tricas de impacto e automa\u00e7\u00e3o para manter a qualidade ao longo do tempo."
-                    ],
-                    "skills": [
-                        "TypeScript",
-                        "React & Next.js",
-                        "Node.js",
-                        "GraphQL",
-                        "PostgreSQL",
-                        "Terraform"
-                    ]
-                },
-                {
-                    "id": "experiencia",
-                    "number": "02",
-                    "title": "Experi\u00eancia",
-                    "navLabel": "Experi\u00eancia",
-                    "type": "timeline",
-                    "items": [
-                        {
-                            "role": "Lead Full Stack Engineer \u00b7 Aurora Labs",
-                            "period": "2021 \u2014 Atual",
-                            "achievements": [
-                                "Desenhei a arquitetura de uma plataforma de analytics que processa mais de 2 milh\u00f5es de eventos di\u00e1rios, reduzindo custos de infraestrutura em 35%.",
-                                "Implementei pipelines de CI/CD com GitHub Actions e Terraform, diminuindo os tempos de deploy de horas para minutos.",
-                                "Mentorei um time de seis desenvolvedores promovendo pair programming e revis\u00f5es de c\u00f3digo estruturadas."
-                            ]
-                        },
-                        {
-                            "role": "Senior Frontend Engineer \u00b7 Andina Commerce",
-                            "period": "2018 \u2014 2021",
-                            "achievements": [
-                                "Redesenhei a experi\u00eancia de compra para v\u00e1rias marcas, aumentando a taxa de convers\u00e3o em 18%.",
-                                "Implementei um design system modular com Storybook, resultando em 40% de redu\u00e7\u00e3o no tempo de entrega.",
-                                "Colaborei com UX research para incorporar m\u00e9tricas de satisfa\u00e7\u00e3o no processo de design."
-                            ]
-                        },
-                        {
-                            "role": "Full Stack Developer \u00b7 Nube Digital",
-                            "period": "2016 \u2014 2018",
-                            "achievements": [
-                                "Constru\u00ed microsservi\u00e7os em Node.js para pagamentos e notifica\u00e7\u00f5es em tempo real.",
-                                "Integrei monitoramento e alertas que reduziram incidentes cr\u00edticos em 25%.",
-                                "Desenvolvi dashboards interativos para clientes corporativos com React e D3.js."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "proyectos",
-                    "number": "03",
-                    "title": "Projetos em destaque",
-                    "navLabel": "Projetos",
-                    "type": "projects",
-                    "items": [
-                        {
-                            "name": "Mapa de Energia",
-                            "label": "Dashboard em tempo real",
-                            "description": "Visualiza o consumo energ\u00e9tico industrial, gera alertas inteligentes e apresenta previs\u00f5es baseadas em machine learning.",
-                            "stack": [
-                                "Next.js",
-                                "GraphQL",
-                                "Supabase"
-                            ],
-                            "links": [
-                                {
-                                    "label": "GitHub",
-                                    "url": "https://github.com/cesarh/energia",
-                                    "ariaLabel": "Reposit\u00f3rio do Mapa de Energia"
-                                },
-                                {
-                                    "label": "Demo",
-                                    "url": "https://energia-demo.example",
-                                    "ariaLabel": "Demo do Mapa de Energia"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Onboarding 360",
-                            "label": "Suite de automa\u00e7\u00e3o",
-                            "description": "Automatiza processos de onboarding corporativo com fluxos personaliz\u00e1veis, relat\u00f3rios de ado\u00e7\u00e3o e analytics integrado.",
-                            "stack": [
-                                "React",
-                                "Node.js",
-                                "MongoDB"
-                            ],
-                            "links": [
-                                {
-                                    "label": "Estudo de caso",
-                                    "url": "https://onboarding360.example/caso",
-                                    "ariaLabel": "Estudo de caso de Onboarding 360"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "contacto",
-                    "number": "04",
-                    "title": "Contato",
-                    "navLabel": "Contato",
-                    "type": "contact",
-                    "paragraphs": [
-                        "Estou aberto a projetos onde a tecnologia possa gerar impacto real. Se quiser colaborar ou simplesmente trocar uma ideia, vou gostar muito de conversar."
-                    ],
-                    "cta": {
-                        "label": "Envie uma mensagem",
-                        "url": "mailto:cesar.hormazabal@email.com"
-                    }
-                }
-            ],
-            "lastUpdate": "Atualizado em 9 de junho de 2024 \u00e0s 18h45 CLT",
-            "aria": {
-                "nav": "\u00cdndice de se\u00e7\u00f5es",
-                "languageSwitcher": "Escolha o idioma",
-                "email": "Enviar e-mail para C\u00e9sar"
+            {
+              "name": "Forecast Energético AES Gener",
+              "label": "Planeamiento de inversión",
+              "description": "Modelo de proyección de demanda eléctrica usado para decisiones de inversión.【19†source】",
+              "stack": [
+                "R",
+                "Python",
+                "XGBoost",
+                "Forecasting"
+              ]
             }
+          ]
+        },
+        {
+          "id": "educacion",
+          "number": "04",
+          "title": "Educación & Certificaciones",
+          "navLabel": "Educación",
+          "type": "about",
+          "paragraphs": [
+            "B.Sc. en Ingeniería Industrial (mención Ingeniería Matemática), Pontificia Universidad Católica de Chile.【19†source】"
+          ],
+          "skills": [
+            "Microsoft Certified: Azure Data Engineer Associate【19†source】",
+            "Microsoft Certified: Azure AI Engineer Associate【19†source】",
+            "En progreso: Databricks Certified Data Engineer Associate【19†source】",
+            "En progreso: Databricks Certified Machine Learning Professional【19†source】"
+          ]
+        },
+        {
+          "id": "docencia",
+          "number": "05",
+          "title": "Docencia y Mentoría",
+          "navLabel": "Docencia",
+          "type": "about",
+          "paragraphs": [
+            "Docente y mentor: UC Big Data Diploma, Data Science Latam Institute; cursos universitarios en Modelos Estocásticos y Machine Learning Aplicado; coach interno en EY y Lighthouse para perfilar y escalar equipos técnicos.【19†source】"
+          ]
+        },
+        {
+          "id": "contacto",
+          "number": "06",
+          "title": "Contacto",
+          "navLabel": "Contacto",
+          "type": "contact",
+          "paragraphs": [
+            "Abierto a liderar iniciativas internacionales de alto impacto en IA, alineando valor técnico con resultados de negocio."
+          ],
+          "cta": {
+            "label": "Enviar correo",
+            "url": "mailto:cesar.hormazabal@outlook.es"
+          }
         }
+      ],
+      "lastUpdate": "Actualizado el 13 de October de 2025 a las 22:24 CLT",
+      "aria": {
+        "nav": "Índice de secciones",
+        "languageSwitcher": "Selecciona idioma",
+        "email": "Enviar correo a César"
+      }
+    },
+    "en": {
+      "language": {
+        "code": "en",
+        "label": "English",
+        "shortLabel": "EN"
+      },
+      "locale": "en",
+      "metaTitle": "César Hormazábal | Lead AI & Data Science Manager",
+      "identity": {
+        "intro": "Hi, I'm",
+        "name": "César Hormazábal",
+        "role": "Lead AI & Data Science Manager",
+        "summary": "Mathematical Engineer and AI leader with 15 years' experience delivering data‑driven solutions across mining, energy, transportation, and retail in LATAM. Proven ability to lead cross‑functional teams, architect end‑to‑end AI systems, and drive impact through predictive modeling, computer vision, and generative AI. Skilled in client‑facing consulting and pre‑sales, aligning technical excellence with business outcomes. Cloud‑native experience (Azure, Databricks, AWS) and a committed educator mentoring and scaling technical teams. Seeking to expand leadership globally and contribute to high‑impact AI initiatives.【19†source】"
+      },
+      "contact": {
+        "email": "cesar.hormazabal@outlook.es",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/in/hormazabalcesar",
+            "ariaLabel": "Open LinkedIn profile"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "about",
+          "number": "01",
+          "title": "About",
+          "navLabel": "About",
+          "type": "about",
+          "paragraphs": [
+            "Senior Manager in AI & Data at EY Chile, leading teams of up to 30 to deliver advanced analytics and AI products for mining, transportation, and industrial clients across LATAM.【19†source】",
+            "Focus on end‑to‑end solutions, data strategy, MLOps, and cloud adoption (Azure, Databricks)."
+          ],
+          "skills": [
+            "Python",
+            "R",
+            "SQL",
+            "XGBoost",
+            "scikit‑learn",
+            "TensorFlow",
+            "Statsmodels",
+            "Azure (Data Factory, Databricks)",
+            "AWS (basic)",
+            "Power BI",
+            "Tableau",
+            "Git",
+            "Docker",
+            "REST APIs"
+          ]
+        },
+        {
+          "id": "experience",
+          "number": "02",
+          "title": "Experience",
+          "navLabel": "Experience",
+          "type": "timeline",
+          "items": [
+            {
+              "role": "Senior Manager – AI & Data · EY Chile",
+              "period": "Aug 2021 — Present",
+              "achievements": [
+                "Managed cross‑functional teams (up to 30 simultaneously within a senior pool of ~80) delivering AI solutions for mining, transportation, and industrial sectors in LATAM.【19†source】",
+                "Led strategic relationship with Codelco under national procurement; formed a Computer Vision & Generative AI lab delivering multiple PoCs for production and asset management.【19†source】",
+                "Co‑led train‑yard optimization for Ferromex (Mexico) via a custom flow optimization algorithm (in deployment).【19†source】",
+                "Oversaw architecture design, proposal development, and long‑term data strategy as part of EY’s national AI leadership.【19†source】",
+                "Technologies: Azure, Databricks, Python pipelines, MLOps.【19†source】"
+              ]
+            },
+            {
+              "role": "Co‑Founder & Lead Data Consultant · Lighthouse Lab (LATAM)",
+              "period": "2018 — 2021",
+              "achievements": [
+                "Built a boutique data science consultancy across Chile, Guatemala, and Panama focused on forecasting, demand modeling, and AI strategy.【19†source】",
+                "Electricity demand forecasting for AES Gener used in power generation investment planning.【19†source】",
+                "Cement demand forecast for Cempro (Guatemala) informing commercial strategy.【19†source】",
+                "B2B recommender system for Dicarina (Panama) optimizing wholesale sales suggestions.【19†source】"
+              ]
+            },
+            {
+              "role": "Senior Data Scientist · MetricArts (Chile)",
+              "period": "2016 — 2018",
+              "achievements": [
+                "Developed predictive models for public sector and enterprises; designed a risk scoring system for ChileCompra to detect procurement anomalies.【19†source】"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "projects",
+          "number": "03",
+          "title": "Featured projects",
+          "navLabel": "Projects",
+          "type": "projects",
+          "items": [
+            {
+              "name": "Ferromex Train‑Yard Optimization",
+              "label": "Flow optimization algorithm",
+              "description": "Algorithm to orchestrate yard maneuvers and maximize wagon utilization; currently in deployment.【19†source】",
+              "stack": [
+                "Python",
+                "Optimization",
+                "Azure",
+                "MLOps"
+              ]
+            },
+            {
+              "name": "Codelco CV & Generative AI Lab",
+              "label": "PoCs for production and assets",
+              "description": "Lab creation for computer vision and generative AI with PoCs oriented to operations and maintenance.【19†source】",
+              "stack": [
+                "Computer Vision",
+                "Generative AI",
+                "Databricks",
+                "Azure"
+              ]
+            },
+            {
+              "name": "AES Gener Energy Forecasting",
+              "label": "Investment planning",
+              "description": "Electricity demand forecasting model used for generation investment decisions.【19†source】",
+              "stack": [
+                "R",
+                "Python",
+                "XGBoost",
+                "Forecasting"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "education",
+          "number": "04",
+          "title": "Education & Certifications",
+          "navLabel": "Education",
+          "type": "about",
+          "paragraphs": [
+            "B.Sc. in Industrial Engineering (Mathematical Engineering track), Pontificia Universidad Católica de Chile.【19†source】"
+          ],
+          "skills": [
+            "Microsoft Certified: Azure Data Engineer Associate【19†source】",
+            "Microsoft Certified: Azure AI Engineer Associate【19†source】",
+            "In progress: Databricks Certified Data Engineer Associate【19†source】",
+            "In progress: Databricks Certified Machine Learning Professional【19†source】"
+          ]
+        },
+        {
+          "id": "teaching",
+          "number": "05",
+          "title": "Teaching & Mentoring",
+          "navLabel": "Teaching",
+          "type": "about",
+          "paragraphs": [
+            "Lecturer and mentor: UC Big Data Diploma, Data Science Latam Institute; university courses in Stochastic Models and Applied Machine Learning; internal coach at EY and Lighthouse to grow technical teams.【19†source】"
+          ]
+        },
+        {
+          "id": "contact",
+          "number": "06",
+          "title": "Contact",
+          "navLabel": "Contact",
+          "type": "contact",
+          "paragraphs": [
+            "Open to leading global, high‑impact AI initiatives that align technical value with business outcomes."
+          ],
+          "cta": {
+            "label": "Send an email",
+            "url": "mailto:cesar.hormazabal@outlook.es"
+          }
+        }
+      ],
+      "lastUpdate": "Last updated on October 13, 2025 at 10:24 PM CLT",
+      "aria": {
+        "nav": "Section index",
+        "languageSwitcher": "Choose language",
+        "email": "Email César"
+      }
+    },
+    "pt": {
+      "language": {
+        "code": "pt",
+        "label": "Português",
+        "shortLabel": "PT"
+      },
+      "locale": "pt-BR",
+      "metaTitle": "César Hormazábal | Gerente de IA e Ciência de Dados",
+      "identity": {
+        "intro": "Olá, eu sou",
+        "name": "César Hormazábal",
+        "role": "Gerente de IA e Ciência de Dados",
+        "summary": "Engenheiro Matemático e líder de IA com 15 anos de experiência entregando soluções orientadas a dados em mineração, energia, transporte e varejo na América Latina. Capaz de liderar equipes multidisciplinares, arquitetar sistemas de IA fim‑a‑fim e gerar impacto por meio de modelagem preditiva, visão computacional e IA generativa. Experiência em consultoria e pré‑venda, alinhando excelência técnica a resultados de negócio. Vivência em tecnologias cloud‑native (Azure, Databricks, AWS) e dedicação à formação de equipes técnicas. Busco ampliar a atuação em iniciativas globais de alto impacto.【19†source】"
+      },
+      "contact": {
+        "email": "cesar.hormazabal@outlook.es",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/in/hormazabalcesar",
+            "ariaLabel": "Abrir perfil no LinkedIn"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "sobre-mim",
+          "number": "01",
+          "title": "Sobre mim",
+          "navLabel": "Sobre mim",
+          "type": "about",
+          "paragraphs": [
+            "Senior Manager em IA e Dados na EY Chile, liderando equipes de até 30 pessoas para entregar analítica avançada e produtos de IA para clientes de mineração, transporte e indústria na América Latina.【19†source】",
+            "Foco em soluções fim‑a‑fim, estratégia de dados, MLOps e adoção de nuvem (Azure, Databricks)."
+          ],
+          "skills": [
+            "Python",
+            "R",
+            "SQL",
+            "XGBoost",
+            "scikit‑learn",
+            "TensorFlow",
+            "Statsmodels",
+            "Azure (Data Factory, Databricks)",
+            "AWS (básico)",
+            "Power BI",
+            "Tableau",
+            "Git",
+            "Docker",
+            "REST APIs"
+          ]
+        },
+        {
+          "id": "experiencia",
+          "number": "02",
+          "title": "Experiência",
+          "navLabel": "Experiência",
+          "type": "timeline",
+          "items": [
+            {
+              "role": "Senior Manager – IA & Dados · EY Chile",
+              "period": "ago 2021 — Atual",
+              "achievements": [
+                "Gestão de equipes multidisciplinares (até 30 simultaneamente dentro de um pool sênior de ~80) entregando soluções de IA para mineração, transporte e indústria na América Latina.【19†source】",
+                "Relação estratégica com a Codelco sob o marco de compras públicas; criação de laboratório de Visão Computacional e IA Generativa com múltiplos PoCs para produção e gestão de ativos.【19†source】",
+                "Co‑liderança da otimização de pátio ferroviário para a Ferromex (México) via algoritmo de otimização de fluxo (em implantação).【19†source】",
+                "Arquitetura, propostas e estratégia de dados de longo prazo como parte da liderança nacional de IA da EY.【19†source】",
+                "Tecnologias: Azure, Databricks, pipelines em Python, MLOps.【19†source】"
+              ]
+            },
+            {
+              "role": "Co‑Founder & Lead Data Consultant · Lighthouse Lab (LATAM)",
+              "period": "2018 — 2021",
+              "achievements": [
+                "Consultoria boutique de ciência de dados voltada a forecasting, modelagem de demanda e estratégia de IA no Chile, Guatemala e Panamá.【19†source】",
+                "Previsão de demanda de eletricidade para a AES Gener usada no planejamento de investimentos em geração.【19†source】",
+                "Previsão de demanda de cimento para a Cempro (Guatemala) apoiando decisões comerciais.【19†source】",
+                "Sistema de recomendação B2B para a Dicarina (Panamá), otimizando sugestões em vendas no atacado.【19†source】"
+              ]
+            },
+            {
+              "role": "Senior Data Scientist · MetricArts (Chile)",
+              "period": "2016 — 2018",
+              "achievements": [
+                "Modelos preditivos para setor público e empresas; desenho de score de risco para o ChileCompra para detectar anomalias de compras.【19†source】"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "projetos",
+          "number": "03",
+          "title": "Projetos em destaque",
+          "navLabel": "Projetos",
+          "type": "projects",
+          "items": [
+            {
+              "name": "Otimização de Pátio Ferroviário Ferromex",
+              "label": "Algoritmo de otimização de fluxo",
+              "description": "Algoritmo para orquestrar manobras e maximizar uso de vagões; em implantação.【19†source】",
+              "stack": [
+                "Python",
+                "Otimização",
+                "Azure",
+                "MLOps"
+              ]
+            },
+            {
+              "name": "Laboratório de CV & IA Generativa Codelco",
+              "label": "PoCs para produção e ativos",
+              "description": "Criação de laboratório de visão computacional e IA generativa com PoCs orientadas a operações e manutenção.【19†source】",
+              "stack": [
+                "Computer Vision",
+                "IA Generativa",
+                "Databricks",
+                "Azure"
+              ]
+            },
+            {
+              "name": "Previsão Energética AES Gener",
+              "label": "Planejamento de investimento",
+              "description": "Modelo de previsão de demanda elétrica para decisões de investimento em geração.【19†source】",
+              "stack": [
+                "R",
+                "Python",
+                "XGBoost",
+                "Forecasting"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "educacao",
+          "number": "04",
+          "title": "Educação & Certificações",
+          "navLabel": "Educação",
+          "type": "about",
+          "paragraphs": [
+            "B.Sc. em Engenharia Industrial (ênfase em Engenharia Matemática), Pontificia Universidad Católica de Chile.【19†source】"
+          ],
+          "skills": [
+            "Microsoft Certified: Azure Data Engineer Associate【19†source】",
+            "Microsoft Certified: Azure AI Engineer Associate【19†source】",
+            "Em andamento: Databricks Certified Data Engineer Associate【19†source】",
+            "Em andamento: Databricks Certified Machine Learning Professional【19†source】"
+          ]
+        },
+        {
+          "id": "ensino",
+          "number": "05",
+          "title": "Ensino e Mentoria",
+          "navLabel": "Ensino",
+          "type": "about",
+          "paragraphs": [
+            "Docente e mentor: UC Big Data Diploma, Data Science Latam Institute; disciplinas universitárias em Modelos Estocásticos e Machine Learning Aplicado; coaching interno na EY e Lighthouse para escalar equipes técnicas.【19†source】"
+          ]
+        },
+        {
+          "id": "contato",
+          "number": "06",
+          "title": "Contato",
+          "navLabel": "Contato",
+          "type": "contact",
+          "paragraphs": [
+            "Aberto a liderar iniciativas globais de alto impacto em IA, alinhando valor técnico a resultados de negócio."
+          ],
+          "cta": {
+            "label": "Enviar e-mail",
+            "url": "mailto:cesar.hormazabal@outlook.es"
+          }
+        }
+      ],
+      "lastUpdate": "Atualizado em 13 de October de 2025 às 22:24 CLT",
+      "aria": {
+        "nav": "Índice de seções",
+        "languageSwitcher": "Escolha o idioma",
+        "email": "Enviar e-mail para César"
+      }
     }
+  }
 }
