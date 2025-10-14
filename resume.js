@@ -1,3 +1,5 @@
+import { getTechIconPath } from './tech-icons.js';
+
 const state = {
   payload: null,
   currentLanguage: null,
@@ -274,12 +276,10 @@ function renderAboutSection(section) {
 
   if (Array.isArray(section.skills) && section.skills.length > 0) {
     const skillList = document.createElement('ul');
-    skillList.className = 'skills';
+    skillList.className = 'skills tech-list';
     section.skills.forEach((skill) => {
       if (!skill) return;
-      const item = document.createElement('li');
-      item.textContent = skill;
-      skillList.appendChild(item);
+      skillList.appendChild(createTechBadge(skill));
     });
     body.appendChild(skillList);
   }
@@ -362,12 +362,10 @@ function renderProjectsSection(section) {
 
     if (Array.isArray(project.stack) && project.stack.length > 0) {
       const stackList = document.createElement('ul');
-      stackList.className = 'project__stack';
+      stackList.className = 'project__stack tech-list';
       project.stack.forEach((tech) => {
         if (!tech) return;
-        const techItem = document.createElement('li');
-        techItem.textContent = tech;
-        stackList.appendChild(techItem);
+        stackList.appendChild(createTechBadge(tech));
       });
       article.appendChild(stackList);
     }
@@ -416,6 +414,47 @@ function renderContactSection(section) {
   }
 
   return body;
+}
+
+function createTechBadge(label) {
+  const item = document.createElement('li');
+  item.className = 'tech-badge';
+
+  const slug = toTechSlug(label);
+  if (slug) {
+    item.dataset.tech = slug;
+  }
+
+  const iconPath = slug ? getTechIconPath(slug) : null;
+  if (iconPath) {
+    const icon = document.createElement('img');
+    icon.src = iconPath;
+    icon.alt = '';
+    icon.loading = 'lazy';
+    icon.setAttribute('aria-hidden', 'true');
+    icon.width = 20;
+    icon.height = 20;
+    icon.decoding = 'async';
+    item.appendChild(icon);
+  }
+
+  const text = document.createElement('span');
+  text.textContent = label;
+  item.appendChild(text);
+
+  return item;
+}
+
+function toTechSlug(label) {
+  if (!label) return '';
+  return label
+    .toString()
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 function setupSectionObserver() {

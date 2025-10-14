@@ -10,7 +10,8 @@ Abre `index.html` en tu navegador favorito para visualizar la página.
 
 Todo el contenido del CV vive en `resume-data.json`. Modifica ese archivo para actualizar datos personales, experiencia, proyectos u otros textos sin tocar el marcado de `index.html`. La interfaz se alimenta dinámicamente a partir de ese archivo al cargarse la página.
 
-- La clave `defaultLanguage` define el idioma que se carga por defecto. Puedes cambiarlo a `"en"` o `"pt"` según necesites.
+- La clave `defaultLanguage` define el idioma que se carga por defecto (actualmente `"en"`). Puedes cambiarlo a `"es"` o `"pt"`
+  según necesites.
 - Bajo `languages` encontrarás un bloque por idioma (`es`, `en`, `pt`) con los textos, etiquetas accesibles y la nota de última actualización. Mantén los mismos identificadores de sección (`id`) para conservar el enrutamiento de los enlaces.
 - Para añadir un nuevo idioma duplica cualquiera de los bloques existentes, actualiza los textos y agrega una entrada al selector de idiomas con un código y etiquetas propios.
 - Actualiza `lastUpdate` en cada idioma para reflejar cuándo hiciste modificaciones relevantes.
@@ -19,6 +20,7 @@ Todo el contenido del CV vive en `resume-data.json`. Modifica ese archivo para a
 
 - Los colores, tipografías y dimensiones globales se controlan mediante variables CSS en `design-tokens.css`. Edita ese archivo para personalizar la identidad visual sin modificar las reglas de estilo base.
 - Las reglas de disposición y comportamiento viven en `styles.css`, donde se consumen los *tokens* definidos previamente. Evita hardcodear valores decorativos ahí para mantener la separación entre contenido y diseño.
+- Los íconos de tecnologías viven en `assets/icons/`. Si agregas o renombras habilidades en el JSON, crea el SVG correspondiente y actualiza el mapeo en `tech-icons.js` para que aparezcan automáticamente.
 
 ## Despliegue recomendado
 
