@@ -2,23 +2,14 @@ import Ajv from 'https://cdn.jsdelivr.net/npm/ajv@8/dist/ajv7.mjs';
 import addFormats from 'https://cdn.jsdelivr.net/npm/ajv-formats@3/dist/ajv-formats.mjs';
 import { TECH_ICON_MAP, SOCIAL_ICON_MAP } from '../tech-icons.js';
 
-const DATA_URL = '../resume-data.json';
-const SCHEMA_URL = '../schemas/resume.schema.json';
-
-const [resumeData, resumeSchema] = await Promise.all([
-  fetchJson(DATA_URL),
-  fetchJson(SCHEMA_URL)
-]);
-
-const ajv = new Ajv({ allErrors: true, strict: true });
-addFormats(ajv);
-const validator = ajv.compile(resumeSchema);
+const DATA_URL = new URL('../resume-data.json', import.meta.url).href;
+const SCHEMA_URL = new URL('../schemas/resume.schema.json', import.meta.url).href;
 
 const state = {
-  data: resumeData,
-  schema: resumeSchema,
-  validator,
-  currentLanguage: resumeData.defaultLanguage || Object.keys(resumeData.languages)[0]
+  data: null,
+  schema: null,
+  validator: null,
+  currentLanguage: null
 };
 
 const elements = {
@@ -38,15 +29,39 @@ const elements = {
   iconReference: document.getElementById('icon-reference')
 };
 
-renderLanguageSelector();
-renderDefaultLanguageCard();
-renderLanguageCard();
-renderIdentityCard();
-renderContactCard();
-renderSectionsCard();
-renderIconReference();
-runValidation();
-updatePreview();
+async function init() {
+  try {
+    const [resumeData, resumeSchema] = await Promise.all([
+      fetchJson(DATA_URL),
+      fetchJson(SCHEMA_URL)
+    ]);
+
+    const ajv = new Ajv({ allErrors: true, strict: true });
+    addFormats(ajv);
+    const validator = ajv.compile(resumeSchema);
+
+    state.data = resumeData;
+    state.schema = resumeSchema;
+    state.validator = validator;
+    state.currentLanguage = resumeData.defaultLanguage || Object.keys(resumeData.languages)[0];
+
+    renderLanguageSelector();
+    renderDefaultLanguageCard();
+    renderLanguageCard();
+    renderIdentityCard();
+    renderContactCard();
+    renderSectionsCard();
+    renderIconReference();
+    runValidation();
+    updatePreview();
+  } catch (error) {
+    console.error(error);
+    elements.validationStatus.textContent = error?.message || 'No se pudo cargar los datos.';
+    elements.validationStatus.className = 'status status--error';
+    elements.validationErrors.innerHTML = '';
+    return;
+  }
+}
 
 function clearElement(element) {
   while (element.firstChild) {
@@ -1014,6 +1029,10 @@ function handleInputChange(event) {
 }
 
 function runValidation() {
+  if (!state.validator || !state.data) {
+    return;
+  }
+
   const valid = state.validator(state.data);
   if (valid) {
     elements.validationStatus.textContent = 'El JSON cumple con el schema.';
@@ -1033,6 +1052,11 @@ function runValidation() {
 }
 
 function updatePreview() {
+  if (!state.data) {
+    elements.jsonPreview.value = '';
+    return;
+  }
+
   elements.jsonPreview.value = JSON.stringify(state.data, null, 2);
 }
 
@@ -1137,3 +1161,5 @@ async function fetchJson(url) {
   }
   return response.json();
 }
+
+init();
