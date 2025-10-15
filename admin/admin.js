@@ -1,5 +1,5 @@
-import Ajv from 'https://cdn.jsdelivr.net/npm/ajv@8/dist/ajv7.mjs';
-import addFormats from 'https://cdn.jsdelivr.net/npm/ajv-formats@3/dist/ajv-formats.mjs';
+import Ajv from 'https://cdn.jsdelivr.net/npm/ajv@8.12.0/dist/2020.js/+esm';
+import addFormats from 'https://cdn.jsdelivr.net/npm/ajv-formats@2.1.1/+esm';
 import { TECH_ICON_MAP, SOCIAL_ICON_MAP } from '../tech-icons.js';
 
 const DATA_URL = new URL('../resume-data.json', import.meta.url).href;
